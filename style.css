@@ -9,10 +9,6 @@ html,body {
     font-family: Arial;
     background-image: url("images/1.png");
     background-repeat: inherit;
- /*  -- текст нормально позиционируется с этими двумя строчками, но футер пропадает
-    display: flex;
-    justify-content: space-around;
- */
 }
 
 a {
@@ -71,19 +67,91 @@ nav {
     justify-content: space-around;
     }
 
+    section {
+    width: 100%;
+    display: flex;
+    }
+
     
     img.right {
         float: right;
         width: 35%;
         margin-right: 22%;
+        transform: translateY(-25%);
     }
 
+    h1 {
+        font-family: cotillio;
+    }
+
+div.left {
+    width: 550px;
+    float: left;
+    padding-left: 200px;
+}
+
+div.left2 {
+    width: 50%;
+    float: left;
+    padding-left: 200px;
+}
+
+div.right {
+    width: 5px;
+    float: right;
+    padding: -40px;
+}
+
+
+div.right2 {
+    width: 50%;
+    float: right;
+    padding: -40px;
+}
+
+div.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.logo_big {
+    margin-top: -200px;
+    margin-left: -350px;
+}
+
+p.center {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 500px;
+    font-family: cotillio;
+    font-size: 55px;
+}
+
+p.info {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+button.center {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 640px;
+}
+
+img.arrow {
+    margin-top: 0px;
+    margin-left: 550px;
+}
+
+/*
     img.shadow {
         float: right;
         width: 35%;
         margin-right: 22%;
+        transform: translateY(-125%);
     }
- 
+ */
     p.left {
         float: left;
         margin-left: 13%;
@@ -100,6 +168,14 @@ nav {
         left: 11%;
         top: 135px;
     } 
+
+
+    p.first {
+        font-family: cotillio;
+        font-size: 45px;
+        text-align: left;
+        padding: 55px;
+    }
 
 
 
@@ -334,32 +410,4 @@ footer {
       margin: 20px 0px 20px 0px;
   }
 
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-    
    }
