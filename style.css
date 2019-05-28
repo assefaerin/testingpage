@@ -9,8 +9,10 @@ html,body {
     font-family: Arial;
     background-image: url("images/1.png");
     background-repeat: inherit;
+ /*  -- текст нормально позиционируется с этими двумя строчками, но футер пропадает
     display: flex;
     justify-content: space-around;
+ */
 }
 
 a {
@@ -24,18 +26,14 @@ li {
 header {
     padding: 2em 15%;
     width: 100%;
-
-    position: absolute;
+    
+    display: block;
     z-index: 99;
     top: 0px;
     text-align: center; 
     letter-spacing: 1px;
     height: 8em;
-    /*  сыпется футер, если убрать эти строки
-    background-image: url("images/1.png");
     background-size: 100%;
-    background-repeat: repeat;
-    */
 }
 
 header .header_left {
@@ -78,12 +76,7 @@ nav {
         top: 135px;
     } 
 
-select {
-    background-color: #62a29e;
-    color: white;
-    border: 1px solid #62a29e;
-    border-radius: 7px 7px 7px 7px;
-}
+
 
 .topnav a {
     color: white;
@@ -101,18 +94,6 @@ select {
     font-size: 40px;
 }
 
-.main_portfolio {
-    background-color: #ececec;
-    display: flex;
-    justify-content: space-between;
-    color: #7f8c8c;
-    padding: 30px 0px 30px 0px;
-}
-
-.main_portfolio h1 {
-    font-size: 28px;
-    margin-left: 13%;
-}
 
 
 .main_right {
@@ -189,54 +170,22 @@ section h1 {
     margin-bottom: 70px;
 }
 */
-.section_nav_bottom {
-    display: flex;
-    justify-content: center;
-}
-/*
-.navigation button {
-    display: inline-flex;
-    justify-content: space-between;
-    color: white;
-    background: grey;
-    padding: 10px;
-    margin: 10px 5px 10px 5px;
-    border: 1px solid grey;
-    border-radius: 5px 5px 5px 5px;
-}
-*/
 
-.content {
-    flex: 1 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
-  background-image: url("images/pryamougolnik_4_kopiya_2.png");
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-/*
 footer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url("images/pryamougolnik_4_kopiya_2.png");
+    position: absolute;
+    bottom: 15px;
     background-size: 100%;
-    background-repeat: no-repeat;
-} */
-/*
+    background-repeat: repeat;
+}
+
 #footer {
     display: flex;
     justify-content: space-between;
     margin-left: 60px;
     align-items: center;
 }
-*/
+
 .company {
     width: 30%;
     color: white;
