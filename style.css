@@ -85,13 +85,13 @@ nav {
     }
 
 div.left {
-    width: 50%;
+    width: auto;
     float: left;
     padding-left: 200px;
 }
 
 div.left2 {
-    width: 50%;
+    width: auto;
     float: left;
     padding-left: 200px;
 }
@@ -110,7 +110,9 @@ div.right2 {
 }
 
 div.center {
-  float: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .basket {
