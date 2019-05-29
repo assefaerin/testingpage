@@ -4,11 +4,15 @@
 }
 
 html,body {
-    height: 100%;
+    min-height: 100%;
+    position: relative;
     color: #7f8c8c;
     font-family: Arial;
     background-image: url("images/1.png");
     background-repeat: inherit;
+}
+body {
+    height: 100%;
 }
 
 a {
@@ -25,13 +29,9 @@ header {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
     vertical-align: middle;
     justify-content: flex-start;  
-    /* почему-то сработали
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     */
     z-index: 99;
     top: 0px;
     text-align: center; 
@@ -42,6 +42,7 @@ header {
 
 header .header_left {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -64,6 +65,7 @@ nav {
 
 .topnav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     }
 
@@ -92,13 +94,13 @@ nav {
 section {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     }
     
 .logo_big {
-    margin-top: 90px;
-    margin-left: 700px;
+    padding: 120px 550px 10px 550px;
     width: 100px;
-    align-items: center;
+    align-items: baseline;
 }
     
 .info {
@@ -124,37 +126,37 @@ div.left {
 .left2 {
     width: auto;
     float: left;
-    padding-left: 200px;
+    padding-left: 350px;
 }
 
 .right {
-    width: 50%;
+    width: auto;
     float: right;
-    padding: ({1,4});
 }
 
 
 .right2 {
-    width: 50%;
+    width: auto;
     float: right;
-    padding: ({1,4});
 }
 
 .center {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .basket {
-    width: 750px;
-    align-items: center;
+    width: 700px;
+    float: right;
 }
 
 
 .font {
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    color: white;
+    justify-content: center;
     font-family: cotillio;
     font-size: 55px;
 }
@@ -166,6 +168,15 @@ button.center {
     margin-left: 650px;
 }
 
+.sizing {
+    margin-top: 30px; 
+}
+
+.rattan {
+    width: 500px;
+    display: flex;
+    align-items: flex;
+}
 
 /*
     img.shadow {
@@ -246,6 +257,7 @@ section {
 .section_nav {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -270,10 +282,11 @@ h1 {
 */
 
  footer { 
+    clear: both;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 10px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -284,14 +297,28 @@ h1 {
   
 }
 
-.footer_border {
-    width: 100%;
-    position: initial;
-    background-color: transparent;
-    left: 11%;
-    margin-bottom: -365px;
+.about {
+    position: absolute;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
+.footer_border {
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    bottom: 0px;
+    
+}
+
+.footer_background {
+    width: 100%;
+    bottom: 0px;
+}
 
 .company {
     width: 30%;
