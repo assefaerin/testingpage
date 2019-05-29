@@ -327,10 +327,16 @@ h1 {
 }
 
 .questions {
+    font-family: cotillio, 'Dancing Script', cursive;
+    font-size: 32px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+}
+
+.question_button {
+    top: 10px;
 }
 
 .footer_border {
