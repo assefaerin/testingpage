@@ -191,7 +191,11 @@ button.center {
 .rattan {
     width: 500px;
     display: flex;
-    align-items: flex;
+}
+
+.bag {
+    width: 500px;
+    float: left;
 }
 
 /*
