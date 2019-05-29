@@ -201,7 +201,8 @@ button.center {
     } 
     
 .first {
-        font-family: cotillio;
+        
+        font-family: cotillio, 'Dancing Script', cursive;
         font-size: 45px;
         text-align: left;
         padding: 55px;
@@ -271,7 +272,7 @@ section a {
 
 h1 {
     text-align: center;
-    font-family: Cotillio;
+    font-family: cotillio, 'Dancing Script', cursive;
     margin-bottom: 20px;
 }
 /* - протестировать, нужно ли
