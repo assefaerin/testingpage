@@ -121,6 +121,7 @@ section {
     width: auto;
     float: left;
     padding-left: 150px;
+    margin-left: 50px;
 }
 
 .left2 {
@@ -186,11 +187,6 @@ button.center {
         transform: translateY(-125%);
     }
  */
-    p.left {
-        float: left;
-        margin-left: 10%;
-    }
-
 
 .custom_border {
         width: 75%;
@@ -201,7 +197,6 @@ button.center {
     } 
     
 .first {
-        
         font-family: cotillio, 'Dancing Script', cursive;
         font-size: 45px;
         text-align: left;
