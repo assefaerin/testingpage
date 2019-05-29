@@ -106,6 +106,7 @@ section {
 .info {
     text-align: center;
     align-content: center;
+    color: whitesmoke;
     margin-top: 10px;
     margin-left: 500px;
 }
@@ -139,6 +140,19 @@ section {
 .right2 {
     width: auto;
     float: right;
+}
+
+.block_left { 
+    width: auto;
+    float: left;
+    padding-left: 150px;
+    margin-left: 50px;
+    color: whitesmoke;
+}
+.block_right {
+    width: auto;
+    float: right;
+    color: whitesmoke;
 }
 
 .center {
