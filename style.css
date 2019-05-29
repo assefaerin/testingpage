@@ -117,10 +117,10 @@ section {
         transform: translateY(-25%);
     }
 
-div.left {
+.left {
     width: auto;
     float: left;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 .left2 {
@@ -157,7 +157,7 @@ div.left {
     display: flex;
     color: white;
     justify-content: center;
-    font-family: cotillio;
+    font-family: cotillio, 'Dancing Script', cursive;
     font-size: 55px;
 }
 
