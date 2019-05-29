@@ -85,7 +85,7 @@ nav {
 
 .custom_border {
     width: 75%;
-    position: absolute;
+    position: relative;
     background-color: transparent;
     left: 10%;
     top: 135px;
@@ -98,17 +98,18 @@ section {
     }
     
 .logo_big {
-    padding: 120px 550px 10px 550px;
+    padding: 220px 550px 10px 550px;
     width: 100px;
     align-items: baseline;
 }
     
 .info {
+    font-family: lato;
     text-align: center;
     align-content: center;
     color: whitesmoke;
     margin-top: 10px;
-    margin-left: 500px;
+    margin-left: 50px;
 }
 
     img.right {
@@ -203,10 +204,11 @@ button.center {
  */
 
 .custom_border {
-        width: 75%;
+        width: 85%;
+        height: 698px;
         position: absolute;
         background-color: transparent;
-        left: 10%;
+        left: 13%;
         top: 135px;
     } 
     
