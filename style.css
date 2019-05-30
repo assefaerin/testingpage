@@ -95,6 +95,7 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
     }
     
 .logo_big {
@@ -177,15 +178,10 @@ section {
     font-size: 55px;
 }
 
-
 button.center {
     text-align: center;
     margin-top: 20px;
     margin-left: 650px;
-}
-
-.sizing {
-    margin-top: 30px; 
 }
 
 .rattan {
@@ -255,13 +251,6 @@ button:hover {
     background-color: #f0a93e;
 }
 
-
-section {
-    margin-top: 20px;
-}
-
-
-
 .section_nav button:hover {
     background: #f0a93e;
 }
@@ -296,40 +285,28 @@ h1 {
  footer { 
     clear: both;
     width: 100%;
-    height: 50px;
-    position: fixed;
     bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-size: 100%;
     background-repeat: repeat;
-    margin-left: 60px;
     align-items: center;
   
 }
 
-.about {
-    position: absolute;
-    text-align: center;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .background {
-  position: relative;
+  position: absolute;
   width: 469px;
   height: 546px;
   background: url(images/18.png) no-repeat;
-  padding: auto;
 }
 
 .questions {
     font-family: cotillio, 'Dancing Script', cursive;
     font-size: 32px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -341,9 +318,12 @@ h1 {
 
 .footer_border {
     width: 100%;
-    position: absolute;
-    background-color: transparent;
+    position: relative;
+    top: 385px;
+    right: 0px;
     bottom: 0px;
+    background-color: transparent;
+    
     
 }
 
@@ -352,33 +332,16 @@ h1 {
     bottom: 0px;
 }
 
-.company {
-    width: 30%;
-    color: white;
-    padding-top: 35px;
+.about {
+    position: relative;
+    left: 150px;
 }
 
-.company h1 {
-    margin-bottom: 20px;
-    margin-left: 10px;
+.footer {
+    position: absolute;
+    margin: 0 auto;
 }
 
-.company p {
-    margin: 20px 10px 20px 10px;
-}
-
-
-.company li {
-    margin: 10px 5px 10px 5px;
-}
-
-.company a {
-    color: white;
-}
-
-.bottom p {
-    margin-left: 55px;
-}
 /*
 .social_button {
         width: 100px; 
@@ -386,6 +349,7 @@ h1 {
         background:url(images/sloi_34.png) 5px 0px; 
 }
 */
+/*==============================MEDIA===============================*/
 
 @media screen and (max-width: 1500px){
     .nav {
@@ -406,11 +370,6 @@ h1 {
         flex-direction: column;
     }
 
-     .footer_wrap {
-        display: flex;
-        flex-direction: column;
-        margin-left: 300px;
-    }
 }
 
 @media screen and (max-width: 660px){
