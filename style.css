@@ -84,10 +84,8 @@ nav {
 /* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
 
 .custom_border {
-    width: 75%;
     position: relative;
     background-color: transparent;
-    left: 10%;
     top: 135px;
 } 
 
@@ -125,12 +123,6 @@ section {
     float: left;
     padding-left: 150px;
     margin-left: 50px;
-}
-
-.left2 {
-    width: auto;
-    float: left;
-    padding-left: 350px;
 }
 
 .right {
