@@ -178,16 +178,7 @@ section {
     font-size: 55px;
 }
 
-button.center {
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 650px;
-}
 
-.rattan {
-    width: 500px;
-    display: flex;
-}
 
 .bag {
     width: 500px;
@@ -295,9 +286,8 @@ h1 {
   
 }
 
-
 .background {
-  position: absolute;
+  position: relative;
   width: 469px;
   height: 546px;
   background: url(images/18.png) no-repeat;
@@ -339,7 +329,6 @@ h1 {
 
 .footer {
     position: absolute;
-    margin: 0 auto;
 }
 
 /*
