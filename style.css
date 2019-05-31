@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-
+/*=================CSS RESET START===========================*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,7 +52,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*==================CSS RESER END=================*/
 html,body {
     min-height: 100%;
     position: relative;
@@ -131,27 +131,34 @@ nav {
 
 /* ---------------------------------------------------------- END OF THE HEADER ---------------------------------------------------------------  */
 
-/* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
+/*======================RULE FOR DIVS AND SECTIONS =====================*/
+div {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
 
+/* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
+/*  ============Old version==============
 .custom_border {
-    position: relative;
+    position: absolute;
     background-color: transparent;
     top: 135px;
 } 
+*/
 
-section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    }
-    
+.img_adaptive {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .logo_big {
     padding: 220px 550px 10px 550px;
     width: 100px;
     align-items: baseline;
 }
-    
+   
 .info {
     font-family: lato;
     text-align: center;
@@ -161,18 +168,23 @@ section {
     margin-left: 50px;
 }
 
-    img.right {
-        float: right;
-        width: 35%;
-        margin-right: 22%;
-        transform: translateY(-25%);
-    }
-
 .left {
-    width: auto;
     float: left;
-    padding-left: 150px;
     margin-left: 50px;
+}
+
+.left-top {
+    position: absolute;
+    float: left;
+    left: 150px;
+    top: 350px;
+}
+
+.right-top {
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    float: left;
 }
 
 .right {
@@ -211,7 +223,6 @@ section {
     float: right;
 }
 
-
 .font {
     display: flex;
     color: white;
@@ -220,15 +231,13 @@ section {
     font-size: 55px;
 }
 
-
-
 .bag {
     width: 500px;
     float: left;
 }
 
 .promo_box {
-    display: block;
+    position: absolute;
 }
 
 .custom_border {
@@ -247,8 +256,6 @@ section {
         padding: 55px;
 }
 
-
-
 .main_right {
     width: 45%;
     float: left;
@@ -261,11 +268,83 @@ section {
     margin-top: 10px;
 }
 
+.section_nav {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .arrow {
     display: block;
     margin: 0 auto;
 }
+
+.background {
+    display: block;
+    width: 469px;
+    height: 546px;
+    /* background: url(images/18.png) no-repeat; ===============promo box================= */
+  }
+  
+  .questions {
+      font-family: cotillio, 'Dancing Script', cursive;
+      font-size: 32px;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+  }
+  
+  .question_button {
+      top: 10px;
+  }
+  
+  .footer_border {
+      width: 100%;
+      position: relative;
+      top: 385px;
+      right: 0px;
+      bottom: 0px;
+      background-color: transparent;
+      
+      
+  }
+  
+  .footer_background {
+      width: 100%;
+      bottom: 0px;
+  }
+  
+  .about {
+      display: block;
+      left: 150px;
+  }
+  
+  .footer {
+      position: relative;
+  }
+  
+
+/*=========================END OF CLASSES========================*/
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    }
+    
+/* CHECKING IN PROCESS
+    img.right {
+        float: right;
+        width: 35%;
+        margin-right: 22%;
+        transform: translateY(-25%);
+    }
+*/
 
 button {
     color: white;
@@ -283,15 +362,9 @@ button:hover {
     background-color: #f0a93e;
 }
 
-.section_nav button:hover {
-    background: #f0a93e;
-}
+.button-1 {
+    position: relative;
 
-.section_nav {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 section a {
@@ -307,69 +380,15 @@ h1 {
     font-family: cotillio, 'Dancing Script', cursive;
     margin-bottom: 20px;
 }
-/* - протестировать, нужно ли
 
-.section_nav {
-    margin-bottom: 70px;
-}
-*/
-
- footer { 
-    clear: both;
-    width: 100%;
+ footer {
     bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-size: 100%;
     background-repeat: repeat;
-    align-items: center;
-  
-}
-
-.background {
-  display: block;
-  width: 469px;
-  height: 546px;
-  /* background: url(images/18.png) no-repeat; ===============promo box================= */
-}
-
-.questions {
-    font-family: cotillio, 'Dancing Script', cursive;
-    font-size: 32px;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-.question_button {
-    top: 10px;
-}
-
-.footer_border {
-    width: 100%;
-    position: relative;
-    top: 385px;
-    right: 0px;
-    bottom: 0px;
-    background-color: transparent;
-    
-    
-}
-
-.footer_background {
-    width: 100%;
-    bottom: 0px;
-}
-
-.about {
-    display: block;
-    left: 150px;
-}
-
-.footer {
-    position: absolute;
+    align-items: center; 
 }
 
 /*
@@ -379,90 +398,3 @@ h1 {
         background:url(images/sloi_34.png) 5px 0px; 
 }
 */
-/*==============================MEDIA===============================*/
-
-@media screen and (max-width: 1500px){
-    .nav {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .main_about {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    
-    .main_right {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width: 660px){
-    header
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .main_nav {
-        margin-right: 60px;
-    }
-    
-    .header_logo p {
-        font-size: 16px;
-    }
-    
-    .main_portfolio {
-        display: flex;
-        flex-direction: column;
-       align-items: center;
-    }
-    
-    .main_portfolio h1 {
-        margin-right: 100px;
-    }
-    
-    .main_portfolio p {
-        margin-left: 100px;
-        margin-top: 20px;
-    }
-    
-    .main_right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-   .main_button {
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-   }
-    
-   .main_img {
-       align-items: center;
-   }
-    
-   .main_left {
-       align-items: center;
-       margin-left: 50px;
-   }
-    
-   .section_nav {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
-    
-  .section_nav a {
-      margin: 20px 0px 20px 0px;
-  }
-  
-
-   }
