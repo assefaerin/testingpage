@@ -154,7 +154,7 @@ div {
 }
 
 .logo_big {
-    padding: 220px 550px 10px 550px;
+    padding: 10px 550px 10px 550px;
     width: 100px;
     align-items: baseline;
 }
@@ -225,8 +225,8 @@ div {
 
 .font {
     display: flex;
-    color: white;
     justify-content: center;
+    color: white;
     font-family: cotillio, 'Dancing Script', cursive;
     font-size: 55px;
 }
@@ -290,10 +290,6 @@ div {
   .questions {
       font-family: cotillio, 'Dancing Script', cursive;
       font-size: 32px;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 50%);
   }
   
   .question_button {
@@ -364,7 +360,12 @@ button:hover {
 
 .button-1 {
     position: relative;
+}
 
+.button-2 {
+    align-content: center;
+    display: block;
+    transform: translate(50%, 50%);
 }
 
 section a {
