@@ -176,13 +176,13 @@ div {
 .left-top {
     position: absolute;
     float: left;
-    left: 150px;
+    left: 120px;
     top: 350px;
 }
 
 .right-top {
     position: absolute;
-    left: 400px;
+    left: 450px;
     top: 300px;
     float: left;
 }
