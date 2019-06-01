@@ -322,6 +322,27 @@ div {
       left: 150px;
   }
   
+  .decorations-left {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .decorations-right {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .decorations-center {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      padding-top: 70px;
+  }
 
 /*=========================END OF CLASSES========================*/
 
