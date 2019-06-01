@@ -82,7 +82,7 @@ header {
     top: 0px;
     text-align: center; 
     letter-spacing: 1px;
-    height: 8em;
+    min-height: 8em;
 }
 
 header .header_left {
@@ -202,8 +202,6 @@ div {
 .block_left { 
     width: auto;
     float: left;
-    margin-left: auto;
-    margin-right: auto;
     color: whitesmoke;
 }
 .block_right {
@@ -211,6 +209,21 @@ div {
     float: right;
     color: whitesmoke;
 }
+
+.info-left {
+    text-align: justify;
+    margin-right: 30px;
+    font-size: 1.125em;
+    line-height: 1.6875em;
+}
+
+
+.info-right {
+    text-align: justify;
+    font-size: 1.125em;
+    line-height: 1.6875em;
+}
+
 
 .center {
   display: flex;
@@ -275,26 +288,19 @@ div {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.arrow {
-    display: block;
-    margin: 0 auto;
-}
-
-.background {
-    display: block;
-    width: 469px;
-    height: 546px;
-    /* background: url(images/18.png) no-repeat; ===============promo box================= */
-  }
   
   .questions {
+      position: relative;
       font-family: cotillio, 'Dancing Script', cursive;
-      font-size: 32px;
+      font-size: 2em;
   }
   
   .question_button {
       top: 10px;
+  }
+
+  .footer {
+      position: absolute;
   }
   
   .footer_border {
