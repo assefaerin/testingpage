@@ -334,6 +334,7 @@ div {
       display: block;
       max-width: 100%;
       height: auto;
+      float: right;
   }
 
   .decorations-center {
@@ -341,9 +342,24 @@ div {
       display: block;
       max-width: 100%;
       height: auto;
-      padding-top: 70px;
   }
 
+  .flour {
+    padding-top: 70px;
+  }
+
+  .flour-1 {
+      left: 80%;
+  }
+
+  .pepper {
+      left: 75%;
+  }
+
+  .garlic {
+      left: 10%;
+  }
+    
 /*=========================END OF CLASSES========================*/
 
 section {
