@@ -221,7 +221,7 @@ div {
 
 .info-left {
     text-align: justify;
-    margin-right: 30px;
+    margin-right: 50px;
     color: whitesmoke;
     font-size: 1.125em;
     line-height: 1.6875em;
@@ -232,6 +232,10 @@ div {
     color: whitesmoke;
     font-size: 1.125em;
     line-height: 1.6875em;
+}
+
+.safe {
+    margin-left: -150px;
 }
 
 .center {
