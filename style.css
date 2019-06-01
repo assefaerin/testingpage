@@ -1,7 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
 /*=================CSS RESET START===========================*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -87,7 +83,6 @@ header {
     text-align: center; 
     letter-spacing: 1px;
     height: 8em;
-    background-size: 100%;
 }
 
 header .header_left {
@@ -161,6 +156,7 @@ div {
    
 .info {
     font-family: lato;
+    font-size: 1.5625em;
     text-align: center;
     align-content: center;
     color: whitesmoke;
@@ -170,13 +166,14 @@ div {
 
 .left {
     float: left;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .left-top {
     position: absolute;
     float: left;
-    left: 120px;
+    left: 75px;
     top: 350px;
 }
 
@@ -190,19 +187,23 @@ div {
 .right {
     width: auto;
     float: right;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .right2 {
     width: auto;
     float: right;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block_left { 
     width: auto;
     float: left;
-    padding-left: 150px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     color: whitesmoke;
 }
 .block_right {
@@ -214,8 +215,8 @@ div {
 .center {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .basket {
@@ -228,7 +229,7 @@ div {
     justify-content: center;
     color: white;
     font-family: cotillio, 'Dancing Script', cursive;
-    font-size: 55px;
+    font-size: 3.4375em;
 }
 
 .bag {
@@ -248,24 +249,24 @@ div {
         left: 13%;
         top: 135px;
     } 
-    
-.first {
-        font-family: cotillio, 'Dancing Script', cursive;
-        font-size: 45px;
-        text-align: left;
-        padding: 55px;
-}
+
 
 .main_right {
     width: 45%;
     float: left;
+    /*
     margin-left: 80px;
+    */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_left {
     width: 45%;
     float: right;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section_nav {
@@ -303,8 +304,6 @@ div {
       right: 0px;
       bottom: 0px;
       background-color: transparent;
-      
-      
   }
   
   .footer_background {
@@ -313,12 +312,8 @@ div {
   }
   
   .about {
-      display: block;
+      position: absolute;
       left: 150px;
-  }
-  
-  .footer {
-      position: relative;
   }
   
 
@@ -359,13 +354,15 @@ button:hover {
 }
 
 .button-1 {
-    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-2 {
-    align-content: center;
     display: block;
-    transform: translate(50%, 50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section a {
@@ -386,6 +383,7 @@ h1 {
     bottom: 0px;
     display: flex;
     flex-direction: row;
+    position: relative;
     justify-content: space-between;
     background-size: 100%;
     background-repeat: repeat;
