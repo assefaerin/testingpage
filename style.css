@@ -273,10 +273,6 @@ div {
     right: -1%;
 }
 
-.promo_box {
-    position: absolute;
-}
-
 .custom_border {
         width: 85%;
         height: 698px;
@@ -309,7 +305,9 @@ div {
 }
   
   .questions {
-      position: relative;
+      position: absolute;
+      bottom: 4%;
+      left: 40%;
       font-family: cotillio, 'Dancing Script', cursive;
       color: whitesmoke;
       font-size: 2em;
@@ -317,6 +315,10 @@ div {
   
   .question_button {
       top: 10px;
+  }
+
+  .promo_box {
+      left: 33%;
   }
 
   .footer {
