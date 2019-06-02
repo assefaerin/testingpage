@@ -69,6 +69,10 @@ a {
 li {
     list-style-type: none;
 }
+
+p {
+    padding-top: 5%;
+}
 /* ------------------------------------------------- header -------------------------------------------------------------------------------- */
 header {
     padding: 2em 15%;
@@ -98,7 +102,7 @@ header .header_left {
 }
 
 .amazon {
-    margin-top: -15px;
+    margin-top: -20px;
 }
 
 nav {
@@ -167,7 +171,6 @@ div {
 }
 
   .info-block {
-      padding-top: 5%;
       text-align: justify;
       color: whitesmoke;
       font-size: 1.125em;
