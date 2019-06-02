@@ -204,7 +204,6 @@ div {
     margin-right: auto;
 }
 
-
 .right2 {
     width: auto;
     float: right;
@@ -240,6 +239,7 @@ div {
 
 .safe {
     margin-left: -150px;
+    margin-top: 25px;
 }
 
 .center {
@@ -257,6 +257,15 @@ div {
     font-size: 3.4375em;
 }
 
+.wheat {
+    position: absolute;
+    left: -20%;
+}
+
+.buckwheat {
+    position: absolute;
+    right: -5%;
+}
 
 .promo_box {
     position: absolute;
