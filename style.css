@@ -287,7 +287,6 @@ div {
         top: 135px;
     } 
 
-
 .main_right {
     width: 45%;
     float: left;
@@ -367,11 +366,16 @@ div {
   }
 
   .flour {
-    padding-top: 70px;
+    padding-top: 9%;
   }
 
   .flour-1 {
       left: 80%;
+  }
+
+  .flour-2 {
+      position: absolute;
+      top: 17%;
   }
 
   .pepper {
@@ -380,6 +384,11 @@ div {
 
   .garlic {
       left: 25%;
+  }
+
+  .cardamone {
+      position: absolute;
+      left: 1%;
   }
     
 /*=========================END OF CLASSES========================*/
