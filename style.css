@@ -79,7 +79,6 @@ header {
     flex-wrap: wrap;
     vertical-align: middle;
     justify-content: flex-start;  
-    z-index: 99;
     top: 0px;
     text-align: center; 
     letter-spacing: 1px;
@@ -112,7 +111,7 @@ nav {
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     }
 
     .topnav a {
@@ -120,8 +119,10 @@ nav {
         font-family: Lato;
         font-size: 20px;
         font-weight: normal;
+        justify-content: space-between;
         text-align: center;
-        padding: 12px 22px;
+        padding: 5px;
+        margin: 10px;
         
     }
 
