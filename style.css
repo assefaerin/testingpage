@@ -341,7 +341,23 @@ div {
   
   .about {
       position: absolute;
-      left: 150px;
+      bottom: 15%;
+      left: 35%;
+      font-size: 1.375em;
+      letter-spacing: 1px;
+    line-height: 1.6875em;
+  }
+
+  .logo {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  }
+
+  .amazon_footer {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
   }
   
   .decorations-left {
