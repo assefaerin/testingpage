@@ -259,12 +259,19 @@ div {
 
 .wheat {
     position: absolute;
+    top: 34%;
     left: -20%;
+}
+
+.wheatbowl {
+    top: 25%;
+    right: 5%;
 }
 
 .buckwheat {
     position: absolute;
-    right: -5%;
+    top: 32%;
+    right: -1%;
 }
 
 .promo_box {
@@ -372,7 +379,7 @@ div {
   }
 
   .garlic {
-      left: 10%;
+      left: 25%;
   }
     
 /*=========================END OF CLASSES========================*/
