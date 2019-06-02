@@ -258,7 +258,6 @@ div {
 }
 
 .wheat {
-    position: absolute;
     top: 34%;
     left: -20%;
 }
@@ -374,7 +373,6 @@ div {
   }
 
   .flour-2 {
-      position: absolute;
       top: 17%;
   }
 
@@ -387,8 +385,7 @@ div {
   }
 
   .cardamone {
-      position: absolute;
-      left: 1%;
+      right: 87%;
   }
     
 /*=========================END OF CLASSES========================*/
