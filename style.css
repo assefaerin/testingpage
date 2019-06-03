@@ -66,6 +66,10 @@ a {
     color: whitesmoke;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 li {
     list-style-type: none;
 }
@@ -357,6 +361,12 @@ div {
   .amazon_footer {
       position: absolute;
       bottom: 15%;
+      left: 53%;
+  }
+
+  .social {
+      position: absolute;
+      bottom: 25%;
       left: 50%;
   }
   
