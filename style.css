@@ -48,12 +48,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*==================CSS RESER END=================*/
+/*==================CSS RESET END=================*/
 html,body {
     min-height: 100%;
     position: relative;
     color: #7f8c8c;
-    font-family: Arial;
+    font-family: Arial, lato;
     background-image: url("images/1.png");
     background-repeat: inherit;
 }
@@ -226,6 +226,7 @@ nav {
 
 .info-right {
     text-align: justify;
+
     color: whitesmoke;
     font-size: 1.125em;
     line-height: 1.6875em;
@@ -252,7 +253,7 @@ nav {
 }
 
 .wheat {
-    top: 34%;
+    top: 30%;
     left: -20%;
 }
 
@@ -462,7 +463,6 @@ h1 {
       align-items: center; 
 }
 
-
 /*=================SLIDER RULES=========================*/
 
 * {box-sizing:border-box}
@@ -559,3 +559,145 @@ h1 {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/*================================MEDIA================================*/
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    
+    header {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-size: 6px;
+    }
+
+    .amazon {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+    .header_left {
+        float: left;
+    }
+} 
+ @media (min-height: 680px), screen and (orientation: portrait) {
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  .header_logo {
+      padding-top: 35px;
+  }
+
+  .font {
+      font-size: 1.5625em;
+      top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .adaptive {
+    font-size: 1.25em;
+    position: absolute;
+    float: left;
+  }
+
+  button {
+    color: white;
+    font-family: lato;
+    font-size: 0.875em;
+    background-color: transparent;
+    padding: 7px 55px 7px 55px;
+    margin: 20px 10px 20px 10px;
+    border: 3px solid white;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  button, .button-2 {
+      left: 25px;
+  }
+
+  p {
+      text-align: center;
+  }
+
+  .left-top, .left, .right, .right-top, p, div, .center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      align-content: center;
+      color: whitesmoke;
+  }
+
+  .info {
+      margin-top: 20px;
+  }
+
+  .font-1 {
+      margin-top: 40px;
+  }
+
+  .font-2 {
+      margin-top: 220px;
+      text-align: justify;
+  }
+
+  /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
+
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper {
+      display: none;
+  }
+/*
+    .pepper {
+        position: absolute;
+    }
+*/
+    section {
+        column-width: 15em;
+      }
+      
+      .wheatbowl {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        }
+
+ }
+
+ 
+
+
+ /* ==================ADAPTIVE IMAGE====================== */
+
+/*
+ position: relative;
+ display: block;
+ max-width: 100%;
+ height: auto;
+*/
