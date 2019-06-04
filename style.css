@@ -107,11 +107,13 @@ nav {
     font-size: 2.125em;
     margin-top: 2%;
 }
+
 .topnav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     }
+
     .topnav a {
         color: white;
         font-family: Lato;
@@ -121,7 +123,6 @@ nav {
         text-align: center;
         padding: 5px;
         margin: 10px;
-        
     }
 /* ---------------------------------------------------------- END OF THE HEADER ---------------------------------------------------------------  */
 /*======================RULE FOR DIVS AND SECTIONS =====================*/
@@ -606,7 +607,7 @@ h1 {
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
-  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .buckwheat {
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl {
       display: none;
   }
 /*
