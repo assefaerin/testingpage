@@ -544,16 +544,10 @@ h1 {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+    
 
 @keyframes fade {
   from {opacity: .4}
@@ -563,12 +557,15 @@ h1 {
 
 /*================================MEDIA================================*/
 
-@media screen and (max-width: 1000px) and (orientation: landscape) {
+@media screen (min-width: 582px) and (max-width: 1000px) and (orientation: landscape) {
     
     header {
         display: grid;
-        align-items: center;
-        justify-content: center;
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+        grid-gap: 0;
+        align-items: stretch;
+        justify-content: stretch;
         font-size: 6px;
     }
 
@@ -583,7 +580,7 @@ h1 {
         float: left;
     }
 } 
- @media (min-height: 680px), screen and (orientation: portrait) {
+ @media(min-height: 438px), screen and (min-width: 388px) and (orientation: portrait) {
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -614,7 +611,7 @@ h1 {
   }
 
   .font {
-      font-size: 1.5625em;
+      font-size: 2.25em;
       top: 10px;
       margin-left: auto;
       margin-right: auto;
@@ -645,17 +642,23 @@ h1 {
   p {
       text-align: center;
   }
+  /*
 
-  .left-top, .left, .right, .right-top, p, div, .center {
+  .left-top, .left, .right, .right-top, p, div, .center, .font-2 {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
       align-content: center;
       color: whitesmoke;
   }
-
+*/
   .info {
-      margin-top: 20px;
+    margin-top: 175px;
+    left: 5px;
+  }
+
+  .info-1 {
+      margin-top: 45px;
   }
 
   .font-1 {
@@ -664,12 +667,12 @@ h1 {
 
   .font-2 {
       margin-top: 220px;
-      text-align: justify;
+      text-align: center;
   }
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
-  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper {
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .buckwheat, .wheat {
       display: none;
   }
 /*
