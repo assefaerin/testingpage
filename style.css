@@ -542,6 +542,10 @@ h1 {
         border: 0;
     }
 
+    body {
+        min-height: 100%;
+    }
+
     .topnav {
         display: flex;
         flex-direction: column;
@@ -554,9 +558,12 @@ h1 {
 
   .font, .font-1 {
       font-size: 1.5625em;
-      top: 10px;
       margin-left: auto;
       margin-right: auto;
+  }
+
+  .font {
+      margin-top: 325px;
   }
   
 
@@ -599,7 +606,7 @@ h1 {
   }
 
   .font-1 {
-      margin-top: 40px;
+      margin-top: 60px;
   }
 
   .font-2 {
@@ -609,7 +616,7 @@ h1 {
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
-  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat {
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat, .smartphone {
       display: none;
   }
 /*
