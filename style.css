@@ -609,7 +609,7 @@ h1 {
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
-  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl {
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat {
       display: none;
   }
 /*
