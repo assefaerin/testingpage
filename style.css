@@ -500,7 +500,7 @@ h1 {
 
 /*================================MEDIA================================*/
 
-@media screen and (max-width: 1000px) and (orientation: landscape) {
+@media screen and (max-width: 62.5em) and (orientation: landscape) {
 
     header {
         display: grid;
@@ -520,7 +520,7 @@ h1 {
         float: left;
     }
 } 
- @media (min-height: 680px), screen and (orientation: portrait) {
+ @media (min-height: 42.5em), screen and (orientation: portrait) {
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -606,7 +606,7 @@ h1 {
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
-  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper {
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .buckwheat {
       display: none;
   }
 /*
