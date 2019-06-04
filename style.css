@@ -578,10 +578,6 @@ h1 {
       margin-right: auto;
   }
 
-  .font {
-      margin-top: 15px;
-  }
-
   button {
     color: white;
     font-family: lato;
@@ -595,7 +591,8 @@ h1 {
   }
 
   button, .button-2 {
-      left: 25px;
+      margin-left: auto;
+      margin-right: auto;
   }
 
   p {
@@ -615,19 +612,19 @@ h1 {
   }
 
   .font-1 {
-      margin-top: 60px;
+      margin-top: 5px;
   }
 
   .font-2 {
-      margin-top: 220px;
+      margin-top: 35px;
       text-align: justify;
   }
 
   .desktop {
-      margin-top: 370px;
+      margin-top: 90px;
       margin-left: 5px;
       margin-bottom: 0px;
-      text-align: justify;
+      text-align: center;
   }
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
