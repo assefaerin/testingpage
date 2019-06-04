@@ -521,6 +521,7 @@ h1 {
         float: left;
     }
 } 
+
  @media (min-height: 42.5em), screen and (orientation: portrait) {
 
     html, body, div, span, applet, object, iframe,
@@ -551,12 +552,13 @@ h1 {
       padding-top: 35px;
   }
 
-  .font {
+  .font, .font-1 {
       font-size: 1.5625em;
       top: 10px;
       margin-left: auto;
       margin-right: auto;
   }
+  
 
   .adaptive {
     font-size: 1.25em;
