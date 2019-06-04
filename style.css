@@ -509,7 +509,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 62.5em) and (orientation: landscape) {
+@media screen and (max-width: 26.25em) and (orientation: landscape) {
 
     header {
         display: grid;
@@ -530,7 +530,7 @@ h1 {
     }
 } 
 
- @media (min-height: 42.5em), screen and (orientation: portrait) {
+ @media screen and (orientation: portrait) {
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
