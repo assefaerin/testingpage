@@ -615,7 +615,7 @@ h1 {
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
-  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat, .smartphone, {
+  .frame, .flour, .flour-1, .flour-2, .right-top, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat, .smartphone {
       display: none;
   }
 /*
@@ -635,7 +635,6 @@ h1 {
         }
 
         .infoblock {
-            float: center;
             margin-left: auto;
             margin-right: auto;
         }
@@ -653,6 +652,12 @@ h1 {
             position: absolute;
         }
 
+       .logo {
+           position: absolute;
+           bottom: 240px;
+           left: 150px;
+       }
+
         .amazon_footer {
 
         }
@@ -661,6 +666,15 @@ h1 {
         .question_button {
             position: relative;
             top: 10px;
+        }
+
+       .about {
+      position: absolute;
+      bottom: 90px;
+      left: 35%;
+      font-size: 1.375em;
+      letter-spacing: 1px;
+      line-height: 1.6875em;
         }
 
   .questions {
