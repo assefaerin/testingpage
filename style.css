@@ -541,7 +541,7 @@ h1 {
 }
 
 
-/*====================================================MEDIA=============================================*/
+/*=============================================================MEDIA===========================================================*/
 
 @media screen and (min-width: 62.5em) {
     .desktop {
@@ -570,6 +570,8 @@ h1 {
         float: left;
     }
 } 
+
+/*=============================================================================================================================*/
 
  @media screen and (orientation: portrait) {
 
@@ -615,7 +617,7 @@ h1 {
 
   .font, .font-1 {
       font-size: 1.5625em;
-      margin-top: 5px;
+      margin-top: 22%;
       margin-left: auto;
       margin-right: auto;
   }
@@ -633,7 +635,7 @@ h1 {
   }
 
   .button-2 {
-      margin-left: 100px;
+      margin-left: 6.25em;
   }
 
   p {
@@ -643,6 +645,7 @@ h1 {
   .left-top, .left, .right, .right-top, p, div, .center {
       margin-left: auto;
       margin-right: auto;
+      margin-top: 5px;
       text-align: center;
       align-content: center;
       color: whitesmoke;
@@ -653,16 +656,60 @@ h1 {
   }
 
   .font-2 {
-      margin-top: 55px;
       text-align: justify;
   }
 
   .desktop {
-      margin-top: 200px;
+      margin-top: 10.3125em;
       margin-left: 15px;
       margin-bottom: 0px;
       text-align: center;
   }
+
+  /*===========================================SOCIAL BUTTONS=============================================*/
+
+  .btn {
+    display: block;
+    width: 50px;
+    margin: 50px auto;
+    padding: 0px;
+  
+    color: whitesmoke;
+    font: inherit;
+    border: 0;
+    background-color: #252525;
+    border-radius: 50%;
+  }
+  .icon {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    
+      vertical-align: bottom;
+      background-image: url("images/sloi_34.png");
+      background-repeat: no-repeat;
+  }
+  
+  .icon-twi {
+      position: absolute;
+      top: 32.5em;
+      left: 70%;
+  }
+  
+  .icon-fb {
+      position: absolute;
+      top: 36.25em;
+      left: 70%;
+  }
+  
+  .icon-insta {
+      position: absolute;
+      top: 40em;
+      left: 70%;
+  }
+
+
+
 
   /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
 
@@ -678,6 +725,7 @@ h1 {
         column-width: 15em;
       }
 
+
       .wheatbowl {
         position: relative;
         display: block;
@@ -686,8 +734,10 @@ h1 {
         }
 
         .infoblock {
+
             margin-left: auto;
             margin-right: auto;
+            text-align: justify;
         }
 
         footer {
@@ -705,13 +755,13 @@ h1 {
 
        .logo {
            position: absolute;
-           bottom: 240px;
-           left: 150px;
+           bottom: 15em;
+           left: 11.5625em;
        }
 
         .amazon_footer {
           position: absolute;
-          bottom: 4%;
+          bottom: 3.5%;
          left: 30%;
         }
 
@@ -724,12 +774,12 @@ h1 {
 
         .question_button {
             position: relative;
-            top: 10px;
+            top: 0.625em;
         }
 
        .about {
       position: absolute;
-      bottom: 90px;
+      bottom: 85px;
       left: 35%;
       font-size: 1.375em;
       letter-spacing: 1px;
@@ -738,15 +788,17 @@ h1 {
 
   .questions {
     position: absolute;
-    bottom: 2%;
-    left: 70px;
+    left: 120px;
+    bottom: 1%;
     font-family: cotillio, 'Dancing Script', cursive;
     color: whitesmoke;
     font-size: 2em;
 }
 
 .promo_box {
-    left: 10px;
+    position: absolute;
+    top: 92%;
+    left: 0.625em;
 }
 
  }
