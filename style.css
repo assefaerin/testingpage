@@ -409,6 +409,52 @@ h1 {
       align-items: center; 
 }
 
+/*========================SOCIAL BUTTONS====================*/
+
+.btn {
+  display: block;
+  width: 50px;
+  margin: 50px auto;
+  padding: 0px;
+
+  color: whitesmoke;
+  font: inherit;
+  border: 0;
+  background-color: #252525;
+  border-radius: 50%;
+}
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  
+    vertical-align: bottom;
+    background-image: url("images/sloi_34.png");
+    background-repeat: no-repeat;
+}
+
+.icon-twi {
+    position: absolute;
+    top: 150px;
+    left: 53%;
+    background-position: -210px 0px;
+}
+
+.icon-fb {
+    position: absolute;
+    top: 150px;
+    left: 58%;
+    background-position: -140px 0px;
+}
+
+.icon-insta {
+    position: absolute;
+    top: 150px;
+    left: 63%;
+    background-position: 0px 0px;
+}
+
+
 
 /*=================SLIDER RULES=========================*/
 
