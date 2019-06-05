@@ -48,7 +48,6 @@ table {
 	border-spacing: 0;
 }
 /*==================CSS RESER END=================*/
-/*==================CSS RESET END=================*/
 html,body {
     min-height: 100%;
     position: relative;
@@ -105,7 +104,7 @@ nav {
     display: inline-block;
     font-family: lato, roboto;
     font-size: 2.125em;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .topnav {
@@ -125,7 +124,7 @@ nav {
         margin: 10px;
     }
 /* ---------------------------------------------------------- END OF THE HEADER ---------------------------------------------------------------  */
-/*======================RULE FOR DIVS AND SECTIONS =====================*/
+
 /* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
 .img_adaptive {
     position: relative;
@@ -145,8 +144,6 @@ nav {
     text-align: center;
     align-content: center;
     color: whitesmoke;
-    margin-top: 10px;
-    margin-left: 50px;
 }
 
 
@@ -164,13 +161,13 @@ nav {
 .left-top {
     position: absolute;
     float: left;
+    top: 5%;
     left: 2%;
-    top: 7%;
 }
 .right-top {
     position: absolute;
+    top: 5%;
     left: 29%;
-    top: 7%;
     float: left;
 }
 .right {
@@ -218,6 +215,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
+
 .font {
     display: flex;
     justify-content: center;
@@ -254,12 +252,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-.section_nav {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
   
   .questions {
       position: absolute;
@@ -344,7 +337,7 @@ nav {
       left: 80%;
   }
   .flour-2 {
-      top: 17.5%;
+      top: 14.3%;
   }
   .pepper {
       left: 75%;
@@ -361,7 +354,8 @@ section {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin-top: 15px;
+      margin-bottom: 5%;
       border-spacing: 0px;
       border-collapse: collapse;
     }
@@ -500,7 +494,7 @@ h1 {
 }
 
 
-/*================================MEDIA================================*/
+/*====================================================MEDIA=============================================*/
 
 @media screen and (min-width: 62.5em) {
     .desktop {
