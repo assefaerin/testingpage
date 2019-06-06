@@ -550,13 +550,28 @@ h1 {
 }
 
 
-@media screen and (max-width: 26.25em) and (orientation: landscape) {
+@media screen and (max-width: 42.5em) and (orientation: landscape) {
 
     header {
-        display: grid;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 6px;
+        font-size: 0.375px;
+    }
+
+    .header_logo {
+        padding-top: 35px;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+ 
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
     }
 
     .amazon {
@@ -569,6 +584,36 @@ h1 {
     .header_left {
         float: left;
     }
+
+
+  .left-top, .left, .right, .right-top, p, div, .center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.desktop {
+    margin-top: 10.3125em;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.font-1 {
+    font-size: 1.875em;
+    margin-top: 22%;
+}
+
+.info {
+    font-size: {
+        
+    }
+}
+
+
 } 
 
 /*=============================================================================================================================*/
@@ -734,6 +779,8 @@ h1 {
         }
 
         .infoblock {
+            display: flex;
+            flex-wrap: wrap;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
