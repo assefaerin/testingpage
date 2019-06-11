@@ -857,9 +857,23 @@ h1 {
 
   .desktop {
       margin-top: 10.3125em;
-      margin-left: 15px;
+      margin-left: 15px;    
       margin-bottom: 0px;
       text-align: center;
+  }
+
+
+  .desktop-1 {         
+      margin-bottom: 0px;
+     text-align: center;
+}
+
+  .footer_background {
+      opacity: 0.001;
+  }
+
+  .footer_border {
+      opacity: 0.001;
   }
 
   /*===========================================SOCIAL BUTTONS=============================================*/
