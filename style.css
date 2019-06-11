@@ -177,10 +177,17 @@ nav {
     float: left;
 }
 .right {
-    padding-top: 13%;
+    padding-top: 1%;
     margin-left: auto;
     margin-right: auto;
 }
+
+.right-blade {
+    padding-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .right2 {
     width: auto;
     float: right;
@@ -354,6 +361,12 @@ nav {
   }
   .cardamone {
       right: 87%;
+  }
+
+  .right, .blade {
+      padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
   }
     
 /*=========================END OF CLASSES========================*/
