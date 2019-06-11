@@ -1,311 +1,993 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: Cotillio;
-            src: url("fonts/cotillio.ttf");
+
+/*=================CSS RESET START===========================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==================CSS RESER END=================*/
+html,body {
+    min-height: 100%;
+    position: relative;
+    color: #7f8c8c;
+    font-family: Arial;
+    font-family: Arial, lato;
+    background-image: url("images/1.png");
+    background-repeat: inherit;
+}
+body {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover {
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+p {
+    padding-top: 3%;
+}
+/* ------------------------------------------------- header -------------------------------------------------------------------------------- */
+header {
+    padding: 2em 15%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    justify-content: flex-start;  
+    top: 0px;
+    text-align: center; 
+    letter-spacing: 1px;
+    min-height: 8em;
+}
+header .header_left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* header logo sellbi */
+.header_logo {
+    margin-top: -45px;
+}
+.amazon {
+    margin-top: -20px;
+}
+nav {
+    display: inline-block;
+    font-family: lato, roboto;
+    font-size: 2.125em;
+    margin-top: 5%;
+}
+
+.topnav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    }
+
+    .topnav a {
+        color: white;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: normal;
+        justify-content: space-between;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+    }
+/* ---------------------------------------------------------- END OF THE HEADER ---------------------------------------------------------------  */
+
+/* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
+.img_adaptive {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.logo_big {
+    padding: 10px 550px 10px 550px;
+    width: 100px;
+    align-items: baseline;
+}
+   
+.info {
+    font-family: lato;
+    font-size: 1.5625em;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+
+  .info-block {
+      text-align: justify;
+      color: whitesmoke;
+      font-size: 1.125em;
+      line-height: 1.6875em;
+  }
+
+   .perfect {
+       margin-left: 25%;
+   }
+
+.left {
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-top {
+    position: absolute;
+    float: left;
+    top: 5%;
+    left: 2%;
+}
+.right-top {
+    position: absolute;
+    top: 5%;
+    left: 29%;
+    float: left;
+}
+.right {
+    padding-top: 13%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right2 {
+    width: auto;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block_left { 
+    width: auto;
+    float: left;
+    color: whitesmoke;
+}
+.block_right {
+    width: auto;
+    float: right;
+    color: whitesmoke;
+}
+
+.info-left {
+    text-align: justify;
+    margin-right: 50px;
+    color: whitesmoke;
+    font-size: 1.125em;
+    line-height: 1.6875em;
+}
+
+.info-right {
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 1.125em;
+    line-height: 1.6875em;
+}
+.safe {
+    margin-left: -150px;
+    margin-top: 25px;
+}
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: cotillio, 'Dancing Script', cursive;
+    font-size: 3.4375em;
+}
+
+.wheat {
+    top: 27%;
+    left: -18%;
+}
+
+.wheatbowl {
+    top: 24%;
+    right: 5%;
+}
+.buckwheat {
+    position: absolute;
+    top: 32%;
+    right: -1%;
+}
+.main_right {
+    width: 45%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_left {
+    width: 45%;
+    float: right;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+  .questions {
+      position: absolute;
+      bottom: 6%;
+      left: 40%;
+      font-family: cotillio, 'Dancing Script', cursive;
+      color: whitesmoke;
+      font-size: 2em;
+  }
+  
+  .question_button {
+      top: 10px;
+  }
+  .promo_box {
+      left: 33%;
+  }
+  .footer {
+      position: absolute;
+  }
+  
+  .footer_border {
+      width: 100%;
+      position: relative;
+      top: 385px;
+      right: 0px;
+      bottom: 0px;
+      background-color: transparent;
+  }
+  
+  .footer_background {
+      width: 100%;
+      bottom: 0px;
+  }
+  
+  .about {
+      position: absolute;
+      bottom: 15%;
+      left: 35%;
+      font-size: 1.375em;
+      letter-spacing: 1px;
+      line-height: 1.6875em;
+  }
+
+  .logo {
+     position: absolute;
+     bottom: 20%;
+     left: 20%;
+  }
+  .amazon_footer {
+      position: absolute;
+      bottom: 15%;
+      left: 54%;
+  }
+  .social {
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+  }
+  
+  .decorations-left {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+  .decorations-right {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      float: right;
+  }
+  .decorations-center {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+  .flour {
+      padding-top: 9%;
+  }
+  .flour-1 {
+      left: 80%;
+  }
+  .flour-2 {
+      top: 53.4375em;
+  }
+  .pepper {
+      left: 75%;
+  }
+  .garlic {
+      left: 25%;
+  }
+  .cardamone {
+      right: 87%;
+  }
+    
+/*=========================END OF CLASSES========================*/
+section {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      margin-bottom: 5%;
+      border-spacing: 0px;
+      border-collapse: collapse;
+    }
+button {
+    color: white;
+    font-family: lato;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px 45px 10px 45px;
+    margin: 25px 10px 25px 10px;
+    border: 3px solid white;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    background-color: #f0a93e;
+}
+
+.button-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+}
+
+section a {
+      margin-right: 350px;
+      margin-top: 5px;
+      font-size: 20px;
+      color: #7f8c8c;
+      font-family: "OpenSans", "Arial";
+}
+h1 {
+      text-align: center;
+      font-family: cotillio, 'Dancing Script', cursive;
+      margin-bottom: 20px;
+}
+ footer {
+      bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: space-between;
+      background-size: 100%;
+      background-repeat: repeat;
+      align-items: center; 
+}
+
+/*========================SOCIAL BUTTONS====================*/
+
+.btn {
+  display: block;
+  width: 50px;
+  margin: 50px auto;
+  padding: 0px;
+
+  color: whitesmoke;
+  font: inherit;
+  border: 0;
+  background-color: #252525;
+  border-radius: 50%;
+}
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  
+    vertical-align: bottom;
+    background-image: url("images/sloi_34.png");
+    background-repeat: no-repeat;
+}
+
+.icon-twi {
+    position: absolute;
+    top: 165px;
+    left: 54.5%;
+    background-position: -210px 0px;
+}
+
+.icon-fb {
+    position: absolute;
+    top: 165px;
+    left: 58.5%;
+    background-position: -140px 0px;
+}
+
+.icon-insta {
+    position: absolute;
+    top: 165px;
+    left: 62.5%;
+    background-position: 0px 0px;
+}
+
+
+
+/*=================SLIDER RULES=========================*/
+
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*=============================================================MEDIA===========================================================*/
+
+@media screen and (min-width: 62.5em) {
+    .desktop {
+    display: none;    
+    }
+}
+
+
+@media screen and (max-width: 40em) and (orientation: landscape) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.375px;
+    }
+
+    .header_logo {
+        padding-top: 35px;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
+}
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+}
+
+    .amazon {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+    .header_left {
+        float: left;
+    }
+
+    button {
+        color: white;
+        font-family: lato;
+        font-size: 0.875em;
+        background-color: transparent;
+        padding: 7px 45px 7px 45px;
+        margin: 20px 10px 20px 10px;
+        border: 3px solid white;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
+
+ .left, .right, .right-top, p, div, .center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.block-left {
+    margin-left: 25%;
+}
+
+.font-1 {
+    font-size: 1.875em;
+    margin-top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    font-family: lato;
+    font-size: 1.0625em;
+    margin-top: 3%;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.bowl {
+    position: relative;
+    display: block;
+    margin-top: 31%;
+    margin-left: 15%; 
+    max-width: 90%;
+    height: auto;
+}
+
+  
+.smartphone, .flour-2  {
+    display: none;
+}
+
+.desktop {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.flour-1 {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    opacity: 0.3;
+}
+
+.wheat {
+    opacity: 0.3;
+}
+
+.pepper {
+   display: none;   
+}
+
+.buckwheat {
+    opacity: 0.3;
+}
+
+
+.infoblock {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.questions {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: 93%;
+    left: 30%;
+    bottom: 1%;
+    font-family: cotillio, 'Dancing Script', cursive;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.promo_box {
+    position: relative;
+    top: 93%;
+    left: 10%;
+}
+/*======================SOCIAL BUTTONS===================================*/
+
+
+.icon-twi {
+    position: absolute;
+    top: 170px;
+    left: 62%;
+    background-position: -210px 0px;
+}
+
+.icon-fb {
+    position: absolute;
+    top: 170px;
+    left: 71%;
+    background-position: -140px 0px;
+}
+
+.icon-insta {
+    position: absolute;
+    top: 170px;
+    left: 80%;
+    background-position: 0px 0px;
+}
+
+.amazon_footer {
+    position: absolute;
+    bottom: 17%;
+    left: 62%;
+  }
+
+  .about {
+    position: absolute;
+    bottom: 15%;
+    left: 39%;
+}
+
+
+
+} 
+
+/*=============================================================================================================================*/
+
+ @media screen and (orientation: portrait) {
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
+    header {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-size: 6px;
+    }
+    
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+  .header_logo {
+      padding-top: 35px;
+  }
+
+  .font, .font-1 {
+      font-size: 2.1875em;
+      margin-top: 22%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  button {
+    color: white;
+    font-family: lato;
+    font-size: 0.875em;
+    background-color: transparent;
+    padding: 7px 55px 7px 55px;
+    margin: 20px 10px 20px 10px;
+    border: 3px solid white;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  .button-2 {
+      margin-left: 6.25em;
+  }
+
+  p {
+      text-align: center;
+  }
+
+  .left-top, .left, .right, .right-top, p, div, .center {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      text-align: center;
+      align-content: center;
+      color: whitesmoke;
+  }
+
+  .info {
+      margin-top: 20px;
+  }
+
+  .font-2 {
+      text-align: justify;
+  }
+
+  .desktop {
+      margin-top: 10.3125em;
+      margin-left: 15px;
+      margin-bottom: 0px;
+      text-align: center;
+  }
+
+  /*===========================================SOCIAL BUTTONS=============================================*/
+
+  .btn {
+    display: block;
+    width: 50px;
+    margin: 50px auto;
+    padding: 0px;
+  
+    color: whitesmoke;
+    font: inherit;
+    border: 0;
+    background-color: #252525;
+    border-radius: 50%;
+  }
+
+  .icon {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    
+      vertical-align: bottom;
+      background-image: url("images/sloi_34.png");
+      background-repeat: no-repeat;
+  }
+  
+  .icon-twi {
+      position: absolute;
+      top: 32.5em;
+      left: 70%;
+  }
+  
+  .icon-fb {
+      position: absolute;
+      top: 36.25em;
+      left: 70%;
+  }
+  
+  .icon-insta {
+      position: absolute;
+      top: 40em;
+      left: 70%;
+  }
+
+
+
+
+  /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
+
+  .frame, .flour, .flour-1, .flour-2, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat, .smartphone {
+      display: none;
+  }
+/*
+    .pepper {
+        position: absolute;
+    }
+*/
+    section {
+        column-width: 15em;
+      }
+
+
+      .wheatbowl {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
         }
-        </style>
-    <title>Sellbi</title>
-</head>
-<body>
-   <!-- HEADER START -->
-<header>
-    <nav>
-        <div class="topnav">
-            <a class="header_left" href="#"> Home</a>
-            <a class="header_left" href="#"> About us</a>
-            <a class="header_left" href="#">Description</a>
-            <a href="#"><img class="img_adaptive header_logo" src="images/4.png"></a>
-            <a class="header_right" href="#">Questions</a>
-            <a class="header_right" href="#">Contacts</a>
-            <a href="#"><img class="img_adaptive amazon" src="images/sloi_25_kopiya.png"></a>
-        </div>
-    </nav>
-</header>
-<!-- HEADER END -->
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
-<main>
-    <section>
-            <img class="img_adaptive frame" src="images/pryamougolnik_1.png" width="1456" height="717">
-      <div class="left-top">
-        <p class="font font-1">The ultimate bakers kit</p>
-        <p class="info">Master the art of proofing!<br>
-        This diverse and elaborate bread proofing<br>basket set is not sold by anyone.
-        </p>
-        <form>
-                <button class="button-1">Order now</button>
-                </form>
-            </div>  
-                    <img class="decorations-center flour" src="images/5.png">
-    <div class="right-top">
-    <img class="img_adaptive bowl" src="images/3.png">
-    </div>
-</section>
-    <!-- ----------------------------------------------------------------------------------------------------------------------------------------   -->
-        <!-- section 1 --> 
-        <section>
-            <img class="decorations-right pepper" src="images/black_pepper_png25.png">
-            <img class="decorations-right flour-1" src="images/sands_11.png">
-            <img class="decorations-left flour-2" src="images/flour_png22.png">
-            <div class="center">
-                <div class="desktop">
-                    <p class="font font-2">Produce bread with artisanal flair!</p>
-                <p class="info"> Whether you are a seasoned professional, enthusiastic amateur<br>or baking lover, Sourly Bread Baking Basket will help your dough to ferment<br>correctly. Sourdough proofing bowl will allow the bread to rise evently for a crispy<br> and thick crust.
-                </p>
-            </div>
-                <div class="smartphone">
-        <img class="logo_big" src="images/vektornyi_smart-obekt.png" alt="sellbi_logo">
-            <p class="font font-2">Produce bread with artisanal flair!</p>
-        <!-- центрирует текст класс инфо --> 
-          <p class="info"> Whether you are a seasoned professional, enthusiastic amateur<br>or baking lover, Sourly Bread Baking Basket will help your dough to ferment<br>correctly. Sourdough proofing bowl will allow the bread to rise evently for a crispy<br> and thick crust.
-            </p>
-            <img class="decorations-center garlic img_adaptive" src="images/7.png">
-            <form>
-                <button class="button-2">Order now</button>
-                </form>
-                <img class="decorations-right wheatbowl img_adaptive" src="images/wheatbowl.png">
-                </div>
-            </div>
-        </section>
 
-                <!--   -->
-                <!--<img class="flour" src="images/flour_png22.png"> --> 
-                <!--  <img class="pepper" src="images/black_pepper_png25.png">
-                <img src="images/flour-png-image-with-tran_2.png"> -->
-                <!--   <img class="garlic" src="images/7.png"> -->
-                   
+        .infoblock {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
 
-        <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- section 2 -->
-        <section>
-            <div class="center">
-                <div>
-                <p class="font">Why Sourly Bread Proofing Basket<br>
-            is the most obvious choice:</p>
-        </div>    
-        </div>
-        </section>
+        footer {
+         bottom: 0px;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         background-size: 100%;
+         align-items: center;
+        }
 
-        <section>
-            <div class="center">
-            <div class="block-left">
-            <img class="img_adaptive center" src="images/12.png">
-            <p class="info-left infoblock">Natural Rattan Cane - A-Level material,<br> handmade, high quality, non-toxic,<br> eco-friendly, food safe, chemical free, dye<br> free, mold resistant, odor-free, anti-bacterial,<br> chip resistant, and east to clean. </p> 
-        </div>
+        .footer {
+            position: absolute;
+        }
 
-        <div class="block-right">
-            <img class="img_adaptive center" src="images/11.png">
-            <p class="info-right infoblock"> Beautiful Ring Pattern - Ridges and depth<br> produce a distinct spiral ring pattern that makes<br> your bread look more appetizing. We have first<br> done machine polishing<br> and then manual polishing which provides shine to the basket.</p>
-        </div>    
-        </div>
-            </section>
+       .logo {
+           position: absolute;
+           bottom: 15em;
+           left: 11.5625em;
+       }
 
-            <img class="decorations-left wheat" src="images/13.png">
-            <div></div>
-            <img class="decorations-right buckwheat" src="images/buckwheat-flour_cut.png">
+        .amazon_footer {
+          position: absolute;
+          bottom: 3.2%;
+          left: 32%;
+        }
 
-<section>
-    <div class="center">
-           <div class="block-left">   
-            <img class="img_adaptive center" src="images/10.png">
-            <p class="info-left safe infoblock"> Safe - Smooth and splinter resistant surface<br> prevent wood particles from entering into the<br> flour.</p>    
-        </div>
-<div></div>
-            <div class="block-right">
-            <img class="img_adaptive center" src="images/9.png">
-            <p class="info-right infoblock"> Functional - Natural rattan cane is proven to<br> absorb moisture away from the surface to<br> impact better texture to your crust.</p>
-        </div>
-            </div>
-</section>
-<!-- ------------------------------------------------------------------------------------------------------------------------------  -->
-        <img class="decorations-left cardamone" src="images/cardamone.png"> 
-        <section>
-            <div class="center">
-                <div>
-        <img class="img_adaptive perfect" src="images/8.png">
+        .social {
+         position: absolute;
+         bottom: 50%;
+         left: 18%;
+        }
 
-        <p class="info-block center perfect">Perfect Size - The size of 10" is ideal for<br>baking every type of bread.</p>
-    </div>    
-    </div>
-    </section>
+       .about {
+      position: absolute;
+      bottom: 85px;
+      left: 37%;
+      font-size: 1.375em;
+      letter-spacing: 1px;
+      line-height: 1.6875em;
+        }
 
-<!-- place for slider -->
+        .right-top {
+         position: relative;
+         top: 15.625em;
+         left: 0.4375em;
+         display: block;
+         max-width: 100%;
+         height: auto;
+        }
 
- <!-- Slideshow container -->
- <div class="slideshow-container">
+  .questions {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 80%;
+    left: 10%;
+    bottom: 1%;
+    font-family: cotillio, 'Dancing Script', cursive;
+    color: whitesmoke;
+    font-size: 2em;
+}
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 6</div>
-          <img src="slides/1.png" style="width:100%">
-          <div class="text"></div>
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 6</div>
-          <img src="slides/2.png" style="width:100%">
-          <div class="text"></div>
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 6</div>
-          <img src="slides/3.png" style="width:100%">
-          <div class="text"></div>
-        </div>
+.promo_box {
+    position: absolute;
+    top: 94%;
+    left: 0.625em;
+}
 
-        <div class="mySlides fade">
-                <div class="numbertext">4 / 6</div>
-                <img src="slides/4.png" style="width:100%">
-                <div class="text"></div>
-              </div>
+ }
 
-              <div class="mySlides fade">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="slides/5.png" style="width:100%">
-                    <div class="text"></div>
-                  </div>
 
-                  <div class="mySlides fade">
-                        <div class="numbertext">6 / 6</div>
-                        <img src="slides/6.png" style="width:100%">
-                        <div class="text"></div>
-                      </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div> 
 
-<!-- ===================== END OF THE SLIDER ========================= -->
 
-<!-- section 4 -->
-      <section>  
-            <div class="left">
-            <p class="font">Naturel Rattan Cane:</p>
-            <p class="info-block infoblock">Sourdough rising basket is crafted from A-Level Indonesian natural rattan <br> cane which is chemical free, eco-friendly and food safe. Round proofing <br> basket will wick moisture from the surface to create a rising and crispy <br> crust, every chef dreams of. </p>
-            <div>
-                <form>
-                        <button class="button-1">Order now</button>
-                        </form>
-                    </div>
-        </div>
-        <div></div>
-            <div class="right2">
-            <img class="img_adaptive" src="images/14.png">
-            </div>
-        </section>
+ /* ==================ADAPTIVE IMAGE====================== */
 
-        <section>
-                        <div class="left">
-                        <img class="img_adaptive" src="images/15.png">
-                        </div>
-                        
-                            <div class="right">
-            <p class="font"> Bonus accessories:</p>
-                <p class="info-block infoblock"> Bread proofing basket comes with some free extras including a liner cloth,<br> flexible dough scraper and cutter, scouring knife, brush and carrying bag<br>to pack everything safely. Knife is packed in leather pack and separate<br> box for safety.</p>
-                    <form>
-                         <button class="button-1">Order now</button>
-                    </form>
-                    </div>
-            </section>
-
-        <div></div>
-
-            <section>
-                <div class="left">
-                <p class="font">Well made & sturdy:</p>
-                <p class="info-block infoblock">Unlike competitors, we do not use weak iron nails; instead we use<br>stainless steel nails in rattan proofing basket to prevent it from deforming.<br>The smooth and splinter free surface prevents hurting while the spiral<br> indentations left by the coil will create a professional artisan look. </p>
-                <form>
-                        <button class="button-1">Order now</button>
-                        </form> 
-            </div>
-                    <div class="right">
-                    <img class="img_adaptive" src="images/sloi_5.png">
-                    </div>
-            </section>
-
-                <div></div>
-
-                <section>
-                        <div class="left">
-                            <img src="images/17.png">
-                            </div>
-
-        <div></div>
-
-            <div class="right">
-                <p class="font">Satisfaction guaranteed:</p>
-                <p class="info-block infoblock">Buy with confidence because we stand behind our products<br> and its quality. In an unlikely event, if you are not satisfied<br> with our dough proofing basket, please contact us;<br> we will take immediate actions to resolve the issue. </p>
-                <div>
-                        <form>
-                            <button class="button-1">Order now</button>
-                            </form>
-                        </div>
-            </div>
-        </section>
-        
-        <img class="img_adaptive promo_box" src="images/18.png">
-        <section>
-            <div class="center">
-            <div class="questions">
-                    <p class="infoblock">We're here to help.</p>
-                    <p class="infoblock">Still have questions?</p>   
-                    <form>
-                            <button class="button-1">Order now</button>
-                            </form>
-            </div>
-            </div>
-        </section>
-</main>
-<!--=======================================================FOOTER======================================================-->
-    <footer>
-        <div class="footer">
-            <a href="#"><img class="img_adaptive amazon_footer" src="images/sloi_25_kopiya.png"></a>
-                <img class="footer_border" src="images/pryamougolnik_1_kopiya.png" width="1456" height="387">
-                <img class="footer_background" src="images/pryamougolnik_4_kopiya_2.jpg" width="1441" height="366">
-    <img class="logo" src="images/vektornyi_smart-obekt.png" width="100" height="83">
-                    <ul class="about">
-                        <li> <a href="#"> Home </a> </li>
-                        <li> <a href="#"> About us </a> </li>
-                        <li> <a href="#"> Description </a> </li>
-                        <li> <a href="#"> Contacts </a> </li>
-                    </ul>
-    </div>
-    <button class="btn btn-twi">
-        <a href="#">
-            <span class="icon icon-twi"></span>
-            </a>
-        </button>
-
-        <button class="btn btn-fb">
-            <a href="#">
-            <span class="icon icon-fb"></span>
-            </a>
-        </button>
-
-        <button class="btn btn-insta">
-            <a href="#">
-            <span class="icon icon-insta"></span>
-            </a>
-        </button>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
-
+/*
+ position: relative;
+ display: block;
+ max-width: 100%;
+ height: auto;
+*/
