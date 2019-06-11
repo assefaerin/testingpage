@@ -153,6 +153,11 @@ nav {
       font-size: 1.125em;
       line-height: 1.6875em;
   }
+
+   .perfect {
+       margin-left: 25%;
+   }
+
 .left {
     padding-top: 10%;
     padding-bottom: 0;
@@ -257,7 +262,7 @@ nav {
   
   .questions {
       position: absolute;
-      bottom: 4%;
+      bottom: 6%;
       left: 40%;
       font-family: cotillio, 'Dancing Script', cursive;
       color: whitesmoke;
@@ -296,6 +301,7 @@ nav {
       letter-spacing: 1px;
       line-height: 1.6875em;
   }
+
   .logo {
      position: absolute;
      bottom: 20%;
@@ -304,7 +310,7 @@ nav {
   .amazon_footer {
       position: absolute;
       bottom: 15%;
-      left: 53%;
+      left: 54%;
   }
   .social {
       position: absolute;
@@ -371,20 +377,24 @@ button {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
 button:hover {
     background-color: #f0a93e;
 }
+
 .button-1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .button-2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     top: 25px;
 }
+
 section a {
       margin-right: 350px;
       margin-top: 5px;
@@ -434,22 +444,22 @@ h1 {
 
 .icon-twi {
     position: absolute;
-    top: 150px;
-    left: 53%;
+    top: 165px;
+    left: 54.5%;
     background-position: -210px 0px;
 }
 
 .icon-fb {
     position: absolute;
-    top: 150px;
-    left: 58%;
+    top: 165px;
+    left: 58.5%;
     background-position: -140px 0px;
 }
 
 .icon-insta {
     position: absolute;
-    top: 150px;
-    left: 63%;
+    top: 165px;
+    left: 62.5%;
     background-position: 0px 0px;
 }
 
@@ -550,14 +560,29 @@ h1 {
 }
 
 
-@media screen and (max-width: 26.25em) and (orientation: landscape) {
+@media screen and (max-width: 40em) and (orientation: landscape) {
 
     header {
-        display: grid;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 6px;
+        font-size: 0.375px;
     }
+
+    .header_logo {
+        padding-top: 35px;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
+}
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+}
 
     .amazon {
     position: relative;
@@ -569,6 +594,152 @@ h1 {
     .header_left {
         float: left;
     }
+
+    button {
+        color: white;
+        font-family: lato;
+        font-size: 0.875em;
+        background-color: transparent;
+        padding: 7px 45px 7px 45px;
+        margin: 20px 10px 20px 10px;
+        border: 3px solid white;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
+
+ .left, .right, .right-top, p, div, .center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.block-left {
+    margin-left: 25%;
+}
+
+.font-1 {
+    font-size: 1.875em;
+    margin-top: 32%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    font-family: lato;
+    font-size: 1.0625em;
+    margin-top: 3%;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+}
+
+.bowl {
+    position: relative;
+    display: block;
+    margin-top: 26%;
+    margin-left: 15%; 
+    max-width: 90%;
+    height: auto;
+}
+
+  
+.smartphone, .flour-2  {
+    display: none;
+}
+
+.desktop {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.flour-1 {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    opacity: 0.3;
+}
+
+.wheat {
+    opacity: 0.3;
+}
+
+.pepper {
+   display: none;   
+}
+
+.buckwheat {
+    opacity: 0.3;
+}
+
+
+.infoblock {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.questions {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: 93%;
+    left: 30%;
+    bottom: 1%;
+    font-family: cotillio, 'Dancing Script', cursive;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.promo_box {
+    position: relative;
+    top: 93%;
+    left: 10%;
+}
+/*======================SOCIAL BUTTONS===================================*/
+
+
+.icon-twi {
+    position: absolute;
+    top: 170px;
+    left: 62%;
+    background-position: -210px 0px;
+}
+
+.icon-fb {
+    position: absolute;
+    top: 170px;
+    left: 71%;
+    background-position: -140px 0px;
+}
+
+.icon-insta {
+    position: absolute;
+    top: 170px;
+    left: 80%;
+    background-position: 0px 0px;
+}
+
+.amazon_footer {
+    position: absolute;
+    bottom: 17%;
+    left: 62%;
+  }
+
+  .about {
+    position: absolute;
+    bottom: 15%;
+    left: 39%;
+}
+
+
+
 } 
 
 /*=============================================================================================================================*/
@@ -610,7 +781,6 @@ h1 {
         align-items: center;    
     }
 
-    
   .header_logo {
       padding-top: 35px;
   }
@@ -680,6 +850,7 @@ h1 {
     background-color: #252525;
     border-radius: 50%;
   }
+
   .icon {
       display: inline-block;
       width: 50px;
@@ -761,8 +932,8 @@ h1 {
 
         .amazon_footer {
           position: absolute;
-          bottom: 3.5%;
-         left: 30%;
+          bottom: 3.2%;
+          left: 32%;
         }
 
         .social {
@@ -774,7 +945,7 @@ h1 {
        .about {
       position: absolute;
       bottom: 85px;
-      left: 35%;
+      left: 37%;
       font-size: 1.375em;
       letter-spacing: 1px;
       line-height: 1.6875em;
@@ -790,10 +961,11 @@ h1 {
         }
 
   .questions {
-    position: absolute;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
-    left: 120px;
+    top: 80%;
+    left: 10%;
     bottom: 1%;
     font-family: cotillio, 'Dancing Script', cursive;
     color: whitesmoke;
@@ -802,7 +974,7 @@ h1 {
 
 .promo_box {
     position: absolute;
-    top: 92%;
+    top: 94%;
     left: 0.625em;
 }
 
