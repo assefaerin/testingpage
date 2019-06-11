@@ -206,23 +206,34 @@ nav {
 }
 
 .info-left {
-    text-align: justify;
+    text-align: center;
     margin-right: 50px;
     color: whitesmoke;
     font-size: 1.125em;
-    line-height: 1.6875em;
+    line-height: 1.75em;
+}
+
+.info-left1 {
+    text-align: center;
+    margin-right: 100px;
+    color: whitesmoke;
+    font-size: 1.125em;
+    line-height: 1.75em;
 }
 
 .info-right {
-    text-align: justify;
+    text-align: center;
     color: whitesmoke;
     font-size: 1.125em;
-    line-height: 1.6875em;
+    line-height: 1.75em;
 }
+
 .safe {
-    margin-left: -150px;
-    margin-top: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .center {
   display: flex;
   flex-wrap: wrap;
@@ -239,13 +250,15 @@ nav {
 }
 
 .wheat {
+    position: absolute;
     top: 27%;
     left: -18%;
 }
 
 .wheatbowl {
+    position: absolute;
     top: 24%;
-    right: 5%;
+    right: 1%;
 }
 .buckwheat {
     position: absolute;
