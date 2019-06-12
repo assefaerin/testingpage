@@ -249,6 +249,10 @@ nav {
     font-size: 3.4375em;
 }
 
+.desktop1 {
+    display: none;
+}
+
 .wheat {
     position: absolute;
     top: 27%;
@@ -681,6 +685,14 @@ h1 {
     margin-left: 15px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+.desktop1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    position: relative;
 }
 
 .flour-1 {
