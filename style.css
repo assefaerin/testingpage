@@ -228,12 +228,6 @@ nav {
     line-height: 1.75em;
 }
 
-.safe {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .center {
   display: flex;
   flex-wrap: wrap;
@@ -590,7 +584,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 42.5em) and (orientation: landscape) {
+@media screen and (max-width: 62em) and (orientation: landscape) {
 
     header {
         display: flex;
@@ -666,6 +660,8 @@ h1 {
     font-family: lato;
     font-size: 1.0625em;
     margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     align-content: center;
     color: whitesmoke;
@@ -713,8 +709,8 @@ h1 {
 
 .infoblock {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25px;
+    margin-right: 25px;
     text-align: center;
 }
 
