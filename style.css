@@ -162,7 +162,8 @@ nav {
   }
 
    .perfect {
-       margin-left: 25%;
+       margin-left: auto;
+       margin-right: auto;
    }
 
 .left {
@@ -590,14 +591,14 @@ h1 {
 
 /*=============================================================MEDIA===========================================================*/
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 64em) {
     .desktop {
     display: none;    
     }
 }
 
 
-@media screen and (max-width: 62em) and (orientation: landscape) {
+@media screen and (max-width: 63.8em) and (orientation: landscape) {
 
     header {
         display: flex;
