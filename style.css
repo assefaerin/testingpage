@@ -1,4 +1,3 @@
-
 /*=================CSS RESET START===========================*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -47,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*==================CSS RESER END=================*/
+/*==================CSS RESET END=================*/
 html,body {
     min-height: 100%;
     position: relative;
@@ -57,19 +56,24 @@ html,body {
     background-image: url("images/1.png");
     background-repeat: inherit;
 }
+
 body {
     height: 100%;
 }
+
 a {
     text-decoration: none;
     color: whitesmoke;
 }
+
 a:hover {
     cursor: pointer;
 }
+
 li {
     list-style-type: none;
 }
+
 p {
     padding-top: 3%;
 }
@@ -88,18 +92,21 @@ header {
     letter-spacing: 1px;
     min-height: 8em;
 }
+
 header .header_left {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-/* header logo sellbi */
+
 .header_logo {
     margin-top: -45px;
 }
+
 .amazon {
     margin-top: -20px;
 }
+
 nav {
     display: inline-block;
     font-family: lato, roboto;
@@ -132,6 +139,7 @@ nav {
     max-width: 100%;
     height: auto;
 }
+
 .logo_big {
     padding: 10px 550px 10px 550px;
     width: 100px;
@@ -145,7 +153,6 @@ nav {
     align-content: center;
     color: whitesmoke;
 }
-
 
   .info-block {
       text-align: justify;
@@ -194,11 +201,13 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
 .block_left { 
     width: auto;
     float: left;
     color: whitesmoke;
 }
+
 .block_right {
     width: auto;
     float: right;
@@ -258,17 +267,20 @@ nav {
     top: 24%;
     right: 1%;
 }
+
 .buckwheat {
     position: absolute;
     top: 32%;
     right: -1%;
 }
+
 .main_right {
     width: 45%;
     float: left;
     margin-left: auto;
     margin-right: auto;
 }
+
 .main_left {
     width: 45%;
     float: right;
@@ -277,8 +289,7 @@ nav {
     margin-right: auto;
 }
 
-  
-  .questions {
+.questions {
       position: absolute;
       bottom: 6%;
       left: 40%;
@@ -287,13 +298,15 @@ nav {
       font-size: 2em;
   }
   
-  .question_button {
+.question_button {
       top: 10px;
   }
-  .promo_box {
+
+.promo_box {
       left: 33%;
   }
-  .footer {
+
+.footer {
       position: absolute;
   }
   
@@ -376,8 +389,8 @@ nav {
 
   .right, .blade {
       padding-top: 120px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
   }
     
 /*=========================END OF CLASSES========================*/
@@ -695,6 +708,8 @@ h1 {
 }
 
 .wheat {
+    top: 20%;
+    left: -30%;
     opacity: 0.3;
 }
 
@@ -703,6 +718,7 @@ h1 {
 }
 
 .buckwheat {
+    top: 25%;
     opacity: 0.3;
 }
 
@@ -765,7 +781,21 @@ h1 {
   .about {
     position: absolute;
     bottom: 15%;
-    left: 39%;
+    left: 36%;
+}
+
+.footer_background {
+    opacity: 0.001;
+}
+
+.footer_border {
+    opacity: 0.001;
+}
+
+.logo {
+    position: absolute;
+    bottom: 10em;
+    left: 4.375em;
 }
 
 
