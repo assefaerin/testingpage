@@ -647,8 +647,12 @@ h1 {
     color: whitesmoke;
 }
 
-.block-left {
-    margin-left: 25%;
+.desktop1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    position: relative;
 }
 
 .font-1 {
@@ -685,14 +689,6 @@ h1 {
     margin-left: 15px;
     margin-bottom: 0px;
     text-align: center;
-}
-
-.desktop1 {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: auto;
-    position: relative;
 }
 
 .flour-1 {
@@ -859,6 +855,11 @@ h1 {
       color: whitesmoke;
   }
 
+  .safe {
+      position: absolute;
+      
+  }
+
   .info {
       margin-top: 20px;
   }
@@ -874,6 +875,13 @@ h1 {
       text-align: center;
   }
 
+.desktop1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    position: relative;
+}
 
   .desktop-1 {         
       margin-bottom: 0px;
