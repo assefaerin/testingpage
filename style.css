@@ -28,15 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -46,7 +40,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*==================CSS RESET END=================*/
 html,body {
     min-height: 100%;
     position: relative;
@@ -56,28 +49,14 @@ html,body {
     background-image: url("images/1.png");
     background-repeat: inherit;
 }
-
-body {
-    height: 100%;
-}
-
+body {height: 100%;}
 a {
     text-decoration: none;
     color: whitesmoke;
 }
-
-a:hover {
-    cursor: pointer;
-}
-
-li {
-    list-style-type: none;
-}
-
-p {
-    padding-top: 3%;
-}
-/* ------------------------------------------------- header -------------------------------------------------------------------------------- */
+a:hover {cursor: pointer;}
+li {list-style-type: none;}
+p {padding-top: 3%;}
 header {
     padding: 2em 15%;
     width: 100%;
@@ -92,35 +71,25 @@ header {
     letter-spacing: 1px;
     min-height: 8em;
 }
-
 header .header_left {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
-.header_logo {
-    margin-top: -45px;
-}
-
-.amazon {
-    margin-top: -20px;
-}
-
+.header_logo {margin-top: -45px;}
+.amazon {margin-top: -20px;}
 nav {
     display: inline-block;
     font-family: lato, roboto;
     font-size: 2.125em;
     margin-top: 5%;
 }
-
 .topnav {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     }
-
-    .topnav a {
+.topnav a {
         color: white;
         font-family: Lato;
         font-size: 20px;
@@ -130,22 +99,17 @@ nav {
         padding: 5px;
         margin: 10px;
     }
-/* ---------------------------------------------------------- END OF THE HEADER ---------------------------------------------------------------  */
-
-/* -------------------------------------------------------------- SECTION 1 -------------------------------------------------------------------- */
 .img_adaptive {
     position: relative;
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 .logo_big {
     padding: 10px 550px 10px 550px;
     width: 100px;
     align-items: baseline;
-}
-   
+}  
 .info {
     font-family: lato;
     font-size: 1.5625em;
@@ -153,15 +117,13 @@ nav {
     align-content: center;
     color: whitesmoke;
 }
-
-  .info-block {
+.info-block {
       text-align: justify;
       color: whitesmoke;
       font-size: 1.125em;
       line-height: 1.6875em;
-  }
-
-   .perfect {
+    }
+.perfect {
        margin-left: auto;
        margin-right: auto;
    }
@@ -189,32 +151,27 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-
 .right-blade {
     padding-top: 8%;
     margin-left: auto;
     margin-right: auto;
 }
-
 .right2 {
     width: auto;
     float: right;
     margin-left: auto;
     margin-right: auto;
 }
-
 .block_left { 
     width: auto;
     float: left;
     color: whitesmoke;
 }
-
 .block_right {
     width: auto;
     float: right;
     color: whitesmoke;
 }
-
 .info-left {
     text-align: center;
     margin-right: 50px;
@@ -222,7 +179,6 @@ nav {
     font-size: 1.125em;
     line-height: 1.75em;
 }
-
 .info-left1 {
     text-align: center;
     margin-right: 100px;
@@ -230,21 +186,18 @@ nav {
     font-size: 1.125em;
     line-height: 1.75em;
 }
-
 .info-right {
     text-align: center;
     color: whitesmoke;
     font-size: 1.125em;
     line-height: 1.75em;
 }
-
 .center {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 }
-
 .font {
     display: flex;
     justify-content: center;
@@ -252,36 +205,30 @@ nav {
     font-family: cotillio, 'Dancing Script', cursive;
     font-size: 3.4375em;
 }
-
 .desktop1 {
     display: none;
 }
-
 .wheat {
     position: absolute;
     top: 27%;
     left: -18%;
 }
-
 .wheatbowl {
     position: absolute;
     top: 24%;
     right: 1%;
 }
-
 .buckwheat {
     position: absolute;
     top: 32%;
     right: -1%;
 }
-
 .main_right {
     width: 45%;
     float: left;
     margin-left: auto;
     margin-right: auto;
 }
-
 .main_left {
     width: 45%;
     float: right;
@@ -289,7 +236,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-
 .questions {
       position: absolute;
       bottom: 6%;
@@ -297,35 +243,23 @@ nav {
       font-family: cotillio, 'Dancing Script', cursive;
       color: whitesmoke;
       font-size: 2em;
-  }
-  
-.question_button {
-      top: 10px;
-  }
-
-.promo_box {
-      left: 33%;
-  }
-
-.footer {
-      position: absolute;
-  }
-  
-  .footer_border {
+  } 
+.question_button {top: 10px;}
+.promo_box {left: 33%;}
+.footer {position: absolute;}
+.footer_border {
       width: 100%;
       position: relative;
       top: 385px;
       right: 0px;
       bottom: 0px;
       background-color: transparent;
-  }
-  
-  .footer_background {
+  }  
+.footer_background {
       width: 100%;
       bottom: 0px;
-  }
-  
-  .about {
+  }  
+.about {
       position: absolute;
       bottom: 15%;
       left: 35%;
@@ -333,68 +267,51 @@ nav {
       letter-spacing: 1px;
       line-height: 1.6875em;
   }
-
-  .logo {
+.logo {
      position: absolute;
      bottom: 20%;
      left: 20%;
   }
-  .amazon_footer {
+.amazon_footer {
       position: absolute;
       bottom: 15%;
       left: 54%;
   }
-  .social {
+.social {
       position: absolute;
       bottom: 25%;
       left: 50%;
-  }
-  
-  .decorations-left {
+  }  
+.decorations-left {
       position: absolute;
       display: block;
       max-width: 100%;
       height: auto;
   }
-  .decorations-right {
+.decorations-right {
       position: absolute;
       display: block;
       max-width: 100%;
       height: auto;
       float: right;
   }
-  .decorations-center {
+.decorations-center {
       position: absolute;
       display: block;
       max-width: 100%;
       height: auto;
   }
-  .flour {
-      padding-top: 9%;
-  }
-  .flour-1 {
-      left: 80%;
-  }
-  .flour-2 {
-      top: 53.4375em;
-  }
-  .pepper {
-      left: 75%;
-  }
-  .garlic {
-      left: 25%;
-  }
-  .cardamone {
-      right: 87%;
-  }
-
-  .right, .blade {
+.flour {padding-top: 9%;}
+.flour-1 {left: 80%;}
+.flour-2 {top: 53.4375em;}
+.pepper {left: 75%;}
+.garlic {left: 25%;}
+.cardamone {right: 87%;}
+.right, .blade {
       padding-top: 120px;
       margin-left: auto;
       margin-right: auto;
   }
-    
-/*=========================END OF CLASSES========================*/
 section {
       width: 100%;
       display: flex;
@@ -403,7 +320,7 @@ section {
       margin-bottom: 5%;
       border-spacing: 0px;
       border-collapse: collapse;
-    }
+ }
 button {
     color: white;
     font-family: lato;
@@ -415,24 +332,18 @@ button {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
-button:hover {
-    background-color: #f0a93e;
-}
-
+button:hover {background-color: #f0a93e;}
 .button-1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 .button-2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     top: 25px;
 }
-
 section a {
       margin-right: 350px;
       margin-top: 5px;
@@ -445,7 +356,7 @@ h1 {
       font-family: cotillio, 'Dancing Script', cursive;
       margin-bottom: 20px;
 }
- footer {
+footer {
       bottom: 0px;
       display: flex;
       flex-direction: row;
@@ -455,15 +366,11 @@ h1 {
       background-repeat: repeat;
       align-items: center; 
 }
-
-/*========================SOCIAL BUTTONS====================*/
-
 .btn {
   display: block;
   width: 50px;
   margin: 50px auto;
   padding: 0px;
-
   color: whitesmoke;
   font: inherit;
   border: 0;
@@ -474,35 +381,28 @@ h1 {
     display: inline-block;
     width: 50px;
     height: 50px;
-  
     vertical-align: bottom;
     background-image: url("images/sloi_34.png");
     background-repeat: no-repeat;
 }
-
 .icon-twi {
     position: absolute;
     top: 165px;
     left: 54.5%;
     background-position: -210px 0px;
 }
-
 .icon-fb {
     position: absolute;
     top: 165px;
     left: 58.5%;
     background-position: -140px 0px;
 }
-
 .icon-insta {
     position: absolute;
     top: 165px;
     left: 62.5%;
     background-position: 0px 0px;
 }
-
-
-
 /*=================SLIDER RULES=========================*/
 
 * {box-sizing:border-box}
@@ -537,9 +437,7 @@ h1 {
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -569,9 +467,7 @@ h1 {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
-  background-color: #717171;
-}
+.active, .dot:hover {background-color: #717171;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -587,19 +483,13 @@ h1 {
   from {opacity: .4}
   to {opacity: 1}
 }
-
-
 /*=============================================================MEDIA===========================================================*/
-
 @media screen and (min-width: 64em) {
     .desktop {
     display: none;    
     }
 }
-
-
 @media screen and (max-width: 63.8em) and (orientation: landscape) {
-
     header {
         display: flex;
         flex-direction: row;
@@ -607,7 +497,6 @@ h1 {
         justify-content: center;
         font-size: 0.375px;
     }
-
     .header_logo {
         padding-top: 35px;
         position: relative;
@@ -615,25 +504,19 @@ h1 {
         max-width: 100%;
         height: auto;
 }
-
     .topnav {
         display: flex;
         flex-direction: column;
         align-items: center;    
 }
-
     .amazon {
     position: relative;
     display: block;
     max-width: 100%;
     height: auto;
     }
-
-    .header_left {
-        float: left;
-    }
-
-    button {
+.header_left {float: left;}
+button {
         color: white;
         font-family: lato;
         font-size: 0.875em;
@@ -644,8 +527,6 @@ h1 {
         border-radius: 5px 5px 5px 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
-
-
  .left, .right, .right-top, p, div, .center {
     margin-left: auto;
     margin-right: auto;
@@ -654,7 +535,6 @@ h1 {
     align-content: center;
     color: whitesmoke;
 }
-
 .desktop1 {
     margin-left: auto;
     margin-right: auto;
@@ -662,14 +542,12 @@ h1 {
     height: auto;
     position: relative;
 }
-
 .font-1 {
     font-size: 1.875em;
     margin-top: 40%;
     margin-left: auto;
     margin-right: auto;
 }
-
 .info {
     font-family: lato;
     font-size: 1.0625em;
@@ -680,7 +558,6 @@ h1 {
     align-content: center;
     color: whitesmoke;
 }
-
 .bowl {
     position: relative;
     display: block;
@@ -688,50 +565,35 @@ h1 {
     margin-left: 15%; 
     max-width: 90%;
     height: auto;
-}
-
-  
-.smartphone, .flour-2, .hide {
-    display: none;
-}
-
+} 
+.smartphone, .flour-2, .hide {display: none;}
 .desktop {
     margin-left: 15px;
     margin-bottom: 0px;
     text-align: center;
 }
-
 .flour-1 {
     position: absolute;
     top: 10%;
     left: 1%;
     opacity: 0.3;
 }
-
 .wheat {
     top: 20%;
     left: -30%;
     opacity: 0.3;
 }
-
-.pepper {
-   display: none;   
-}
-
+.pepper {display: none;}
 .buckwheat {
     top: 25%;
     opacity: 0.3;
 }
-
-
 .infoblock {
     display: flex;
     margin-left: 25px;
     margin-right: 25px;
     text-align: center;
 }
-
-
 .questions {
     position: absolute;
     margin-right: auto;
@@ -743,68 +605,49 @@ h1 {
     color: whitesmoke;
     font-size: 2em;
 }
-
 .promo_box {
     position: relative;
     top: 93%;
     left: 10%;
 }
-/*======================SOCIAL BUTTONS===================================*/
-
-
 .icon-twi {
     position: absolute;
     top: 170px;
     left: 62%;
     background-position: -210px 0px;
 }
-
 .icon-fb {
     position: absolute;
     top: 170px;
     left: 71%;
     background-position: -140px 0px;
 }
-
 .icon-insta {
     position: absolute;
     top: 170px;
     left: 80%;
     background-position: 0px 0px;
 }
-
 .amazon_footer {
     position: absolute;
     bottom: 17%;
     left: 62%;
-  }
-
-  .about {
+}
+.about {
     position: absolute;
     bottom: 15%;
     left: 36%;
 }
-
 .footer_background {
     opacity: 0.001;
 }
-
-.footer_border {
-    opacity: 0.001;
-}
-
+.footer_border {opacity: 0.001;}
 .logo {
     position: absolute;
     bottom: 10em;
     left: 4.375em;
 }
-
-
-
-} 
-
-/*=============================================================================================================================*/
-
+}
  @media screen and (orientation: portrait) {
 
     html, body, div, span, applet, object, iframe,
@@ -824,36 +667,26 @@ h1 {
         padding: 0;
         border: 0;
     }
-
-    body {
-        min-height: 100%;
-    }
-
-    header {
+body {min-height: 100%;}
+header {
         display: grid;
         align-items: center;
         justify-content: center;
         font-size: 6px;
-    }
-    
-    .topnav {
+}
+.topnav {
         display: flex;
         flex-direction: column;
-        align-items: center;    
-    }
-
-  .header_logo {
-      padding-top: 35px;
-  }
-
-  .font, .font-1 {
+        align-items: center;
+}
+.header_logo {padding-top: 35px;}
+.font, .font-1 {
       font-size: 2.1875em;
       margin-top: 22%;
       margin-left: auto;
       margin-right: auto;
-  }
-
-  button {
+}
+button {
     color: white;
     font-family: lato;
     font-size: 0.875em;
@@ -863,15 +696,9 @@ h1 {
     border: 3px solid white;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-
-  .button-2 {
-      margin-left: 6.25em;
-  }
-
-  p {
-      text-align: center;
-  }
+}
+.button-2 {margin-left: 6.25em;}
+p {text-align: center;}
 
   .left-top, .left, .right, .right-top, p, div, .center {
       margin-left: auto;
@@ -880,28 +707,21 @@ h1 {
       text-align: center;
       align-content: center;
       color: whitesmoke;
-  }
-
-  .safe {
-      position: absolute;
-      
-  }
-
-  .info {
-      margin-top: 20px;
-  }
-
-  .font-2 {
+}
+.safe {position: absolute;}
+.info {margin-top: 20px;}
+.font-2 {
+      font-family: cotillio, 'Dancing Script', cursive;
+      color: whitesmoke;
+      font-size: 2em;
       text-align: justify;
-  }
-
-  .desktop {
+}
+.desktop {
       margin-top: 10.3125em;
       margin-left: 15px;    
       margin-bottom: 0px;
       text-align: center;
-  }
-
+}
 .desktop1 {
     margin-left: auto;
     margin-right: auto;
@@ -909,146 +729,102 @@ h1 {
     height: auto;
     position: relative;
 }
-
-  .desktop-1 {         
+.desktop-1 {         
       margin-bottom: 0px;
      text-align: center;
 }
-
-  .footer_background {
-      opacity: 0.001;
-  }
-
-  .footer_border {
-      opacity: 0.001;
-  }
-
-  /*===========================================SOCIAL BUTTONS=============================================*/
-
-  .btn {
+.footer_background {opacity: 0.001;}
+.footer_border {opacity: 0.001;}
+.btn {
     display: block;
     width: 50px;
     margin: 50px auto;
-    padding: 0px;
-  
+    padding: 0px;  
     color: whitesmoke;
     font: inherit;
     border: 0;
     background-color: #252525;
     border-radius: 50%;
-  }
-
-  .icon {
+}
+.icon {
       display: inline-block;
       width: 50px;
-      height: 50px;
-    
+      height: 50px;    
       vertical-align: bottom;
       background-image: url("images/sloi_34.png");
       background-repeat: no-repeat;
-  }
-  
-  .icon-twi {
+}  
+.icon-twi {
       position: absolute;
       top: 32.5em;
       left: 70%;
-  }
-  
-  .icon-fb {
+}  
+.icon-fb {
       position: absolute;
       top: 36.25em;
       left: 70%;
-  }
-  
-  .icon-insta {
+}  
+.icon-insta {
       position: absolute;
       top: 40em;
       left: 70%;
-  }
-
-
-
-
-  /*GARLIC SHOULD BE RETURNED ON ADAPTIVE, PEPPER PROBABLY*/
-
-  .frame, .flour, .flour-1, .flour-2, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat, .smartphone, .hide {
-      display: none;
-  }
-/*
-    .pepper {
-        position: absolute;
-    }
-*/
-    section {
-        column-width: 15em;
-      }
-
-
-      .wheatbowl {
+}
+.frame, .flour, .flour-1, .flour-2, .garlic, .pepper, .wheat, .wheatbowl, .buckwheat, .smartphone, .hide {display: none;}
+section {column-width: 15em;}
+.wheatbowl {
         position: relative;
         display: block;
         max-width: 100%;
         height: auto;
-        }
-
-        .infoblock {
+}
+.infoblock {
             display: flex;
             margin-top: 5px;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-        }
-
-        footer {
+}
+footer {
          bottom: 0px;
          display: flex;
          flex-direction: column;
          position: relative;
          background-size: 100%;
          align-items: center;
-        }
-
-        .footer {
-            position: absolute;
-        }
-
-       .logo {
+}
+.footer {position: absolute;}
+.logo {
            position: absolute;
            bottom: 15em;
            left: 11.5625em;
-       }
-
-        .amazon_footer {
+}
+.amazon_footer {
           position: absolute;
           bottom: 3.2%;
           left: 32%;
-        }
-
-        .social {
+}
+.social {
          position: absolute;
          bottom: 50%;
          left: 18%;
-        }
-
-       .about {
+}
+.about {
       position: absolute;
       bottom: 85px;
       left: 37%;
       font-size: 1.375em;
       letter-spacing: 1px;
       line-height: 1.6875em;
-        }
-
-        .right-top {
+}
+.right-top {
          position: relative;
          top: 15.625em;
          left: 0.4375em;
          display: block;
          max-width: 100%;
          height: auto;
-        }
-
-  .questions {
+}
+.questions {
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -1059,23 +835,9 @@ h1 {
     color: whitesmoke;
     font-size: 2em;
 }
-
 .promo_box {
     position: absolute;
     top: 94%;
     left: 0.625em;
 }
-
  }
-
-
-
-
- /* ==================ADAPTIVE IMAGE====================== */
-
-/*
- position: relative;
- display: block;
- max-width: 100%;
- height: auto;
-*/
